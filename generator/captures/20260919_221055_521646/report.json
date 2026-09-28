@@ -1,0 +1,103 @@
+{
+  "session_id": "20260919_221055_521646",
+  "mode": "hardware",
+  "status": "interrupted",
+  "statistics": {
+    "commands_attempted": 5111,
+    "commands_acknowledged": 5111,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.014000000040978122,
+    "per_id": {
+      "0": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "1": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "2": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "6": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "7": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "9": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "10": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "11": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "12": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "13": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "14": {
+        "acknowledged": 256,
+        "skipped": 0
+      },
+      "15": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "17": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "20": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "24": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "25": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "26": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "27": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "32": {
+        "acknowledged": 255,
+        "skipped": 0
+      },
+      "33": {
+        "acknowledged": 255,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 25.54700000002049,
+    "acknowledged_fps": 200.06262966281366
+  },
+  "adapter": {
+    "firmware": "0502h",
+    "hardware": "0003",
+    "serial": "16165743"
+  },
+  "error": "Ctrl+C",
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN.",
+  "received_frames_while_waiting": 0
+}

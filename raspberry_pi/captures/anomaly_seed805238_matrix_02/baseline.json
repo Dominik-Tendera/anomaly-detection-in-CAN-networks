@@ -1,0 +1,114 @@
+{
+  "format": "can-live-baseline-v1",
+  "ready": true,
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "channel": 1,
+  "learning_start_us": 4791915919,
+  "learning_end_us": 4971947829,
+  "min_intervals": 100,
+  "reference_is_normal": "assumption supplied by operator, not verified by detector",
+  "messages": {
+    "6": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 5887.02578927587
+    },
+    "9": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 1000004.6424581006,
+      "std_us": 3114.986784154933
+    },
+    "10": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 1000001.5083798883,
+      "std_us": 7290.779346474562
+    },
+    "65": {
+      "frame_count": 1801,
+      "interval_count": 1800,
+      "period_us": 99999.02666666677,
+      "std_us": 5960.796541510946
+    },
+    "455": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99999.43690939383,
+      "std_us": 6747.231844663525
+    },
+    "512": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99996.09949972195,
+      "std_us": 6405.817831093281
+    },
+    "1034": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 2925.369481292379
+    },
+    "1037": {
+      "frame_count": 901,
+      "interval_count": 900,
+      "period_us": 199989.3244444445,
+      "std_us": 6874.555292385762
+    },
+    "1038": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 199999.1490545049,
+      "std_us": 4469.793214631377
+    },
+    "1317": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 200006.46607341498,
+      "std_us": 6078.947707818226
+    },
+    "1327": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 1000004.6424581007,
+      "std_us": 2630.9833719445473
+    },
+    "1328": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 2081.9099129917195
+    },
+    "1407": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 3067.1476013236475
+    },
+    "1425": {
+      "frame_count": 1801,
+      "interval_count": 1800,
+      "period_us": 99999.07888888872,
+      "std_us": 6818.859863268023
+    },
+    "1761": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100001.56197887722,
+      "std_us": 6731.304384390008
+    },
+    "1763": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100001.32740411336,
+      "std_us": 5812.714191725352
+    },
+    "1881": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999993.4525139666,
+      "std_us": 3469.485721993882
+    }
+  }
+}

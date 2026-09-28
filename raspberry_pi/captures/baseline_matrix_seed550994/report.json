@@ -1,0 +1,105 @@
+{
+  "session_id": "baseline_matrix_seed550994",
+  "mode": "live",
+  "status": "interrupted",
+  "error": null,
+  "replay_comparison": null,
+  "files": {
+    "trace": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/baseline_matrix_seed550994/trace.canbin",
+    "events": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/baseline_matrix_seed550994/events.jsonl",
+    "quality": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/baseline_matrix_seed550994/quality.jsonl"
+  },
+  "trace_recording": {
+    "enabled": true,
+    "path": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/baseline_matrix_seed550994/trace.canbin",
+    "bytes_written": 797229
+  },
+  "bytes_received": 797229,
+  "elapsed_s": 187.33879236000007,
+  "input_idle_s": 0.051450106000174856,
+  "analysis": {
+    "decoder": {
+      "records_ok": 20455,
+      "crc_errors": 0,
+      "cobs_errors": 0,
+      "short_records": 0,
+      "sync_losses": 0,
+      "unknown_types": 0,
+      "bytes_in": 797229
+    },
+    "counters": {
+      "records": 20455,
+      "frames_all_channels": 14691,
+      "frames": 14691
+    },
+    "session_record": null,
+    "last_device_time_us": 1353115714,
+    "baseline_state": "ready",
+    "periodic_ids": [
+      10,
+      17,
+      27,
+      96,
+      1025,
+      1037,
+      1325,
+      1329,
+      1425,
+      1553,
+      1881,
+      2021
+    ],
+    "ids_without_period": [
+      6,
+      1034,
+      1328,
+      1407
+    ],
+    "sigma_disabled_zero_variance": [],
+    "events_by_type": {
+      "statistical_deviation": 1
+    },
+    "events_by_method": {
+      "dbc": 0,
+      "timeout": 0,
+      "period": 0,
+      "frequency": 0,
+      "three_sigma": 1,
+      "burst": 0,
+      "controller": 0
+    },
+    "settings": {
+      "channel": 1,
+      "learn_seconds": 180.0,
+      "min_intervals": 100,
+      "window_seconds": 1.0,
+      "missing_multiplier": 3.0,
+      "period_tolerance": 0.3,
+      "frequency_tolerance": 0.5,
+      "sigma_multiplier": 3.0,
+      "burst_factor": 0.25,
+      "burst_frames": 4,
+      "ignore_ids": [
+        2046
+      ]
+    },
+    "absolute_time_available": false,
+    "quality_note": "Intervals are provisional until diagnostic counters arrive; exclude overlaps during evaluation.",
+    "has_quality_issues": false
+  },
+  "analysis_error": null,
+  "analysis_queue_overflow": false,
+  "analysis_complete": true,
+  "performance": {
+    "analysis_processing_s": 9.141671181,
+    "analysis_records_per_processing_second": 2237.5558686155287,
+    "analysis_us_per_record": 446.91621515521877,
+    "analysis_bytes_processed": 797229,
+    "queue_chunks": 0,
+    "queue_peak_chunks": 3,
+    "queue_capacity_chunks": 128,
+    "peak_resident_memory_bytes": 32374784,
+    "processing_fraction_of_capture_time": 0.048797534487320084
+  },
+  "trace_sha256": "86f08f7a21116b1b36271222d022d801fd2ead812722f1e795919aeee824986e"
+}

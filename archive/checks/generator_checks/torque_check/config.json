@@ -1,0 +1,60 @@
+{
+  "session_id": "torque_check",
+  "created_utc": "2026-09-19T19:55:26.469960+00:00",
+  "mode": "dry_run",
+  "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "cantools_version": "44.1.0",
+  "generator_sha256": "4a1f82016e78f37c227dad4d9039b995307133cc0a5b01d35ae96fc54a00494f",
+  "engine_sha256": "c521e1aa083b666e75de8967739bcc72973d36652f50d2fbed703444792a2558",
+  "arguments": {
+    "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+    "port": null,
+    "list_ports": false,
+    "list_messages": false,
+    "dry_run": true,
+    "bitrate": 1000000,
+    "duration": 5.0,
+    "ids": [
+      512,
+      513
+    ],
+    "max_messages": 20,
+    "period_ms": null,
+    "max_fps": 100.0,
+    "host_utilisation": 0.4,
+    "signals": "sine",
+    "wave_period": 10.0,
+    "timeout": 1.0,
+    "output": "generator_checks",
+    "session": "torque_check"
+  },
+  "host_baud": 115200,
+  "budget": {
+    "nominal_fps": 20.0,
+    "host_bits_per_second": 4400.0,
+    "host_utilisation": 0.03819444444444445,
+    "estimated_can_utilisation_upper": 0.00272,
+    "skipped": []
+  },
+  "messages": [
+    {
+      "can_id": 512,
+      "name": "DV_CONTROL",
+      "dlc": 8,
+      "period_s": 0.1,
+      "phase_s": 0.0,
+      "initial_data": "c40001843b1a347b"
+    },
+    {
+      "can_id": 513,
+      "name": "DV_TORQUE",
+      "dlc": 8,
+      "period_s": 0.1,
+      "phase_s": 0.05,
+      "initial_data": "0d5dbd2af2a242d5"
+    }
+  ],
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN.",
+  "traffic_note": "Syntetyczny ruch referencyjny; brak modelu zachowania ECU, licznikow i checksum aplikacyjnych."
+}

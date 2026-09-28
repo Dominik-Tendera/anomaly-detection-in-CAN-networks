@@ -1,0 +1,89 @@
+{
+  "session_id": "anomalies_seed829730_matrix_01",
+  "status": "completed",
+  "mode": "hardware",
+  "statistics": {
+    "commands_attempted": 12872,
+    "commands_acknowledged": 12872,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.016804774071566442,
+    "per_episode": {
+      "E01": {
+        "acknowledged_frames": 75,
+        "skipped_frames": 0
+      },
+      "E02": {
+        "acknowledged_frames": 120,
+        "skipped_frames": 0
+      },
+      "E03": {
+        "acknowledged_frames": 240,
+        "skipped_frames": 0
+      },
+      "E04": {
+        "acknowledged_frames": 48,
+        "skipped_frames": 0
+      },
+      "E05": {
+        "acknowledged_frames": 30,
+        "skipped_frames": 0
+      },
+      "E06": {
+        "acknowledged_frames": 15,
+        "skipped_frames": 0
+      },
+      "E07": {
+        "acknowledged_frames": 0,
+        "skipped_frames": 0
+      },
+      "E08": {
+        "acknowledged_frames": 0,
+        "skipped_frames": 0
+      },
+      "E09": {
+        "acknowledged_frames": 4,
+        "skipped_frames": 0
+      },
+      "E10": {
+        "acknowledged_frames": 20,
+        "skipped_frames": 0
+      },
+      "E11": {
+        "acknowledged_frames": 1,
+        "skipped_frames": 0
+      },
+      "E12": {
+        "acknowledged_frames": 8,
+        "skipped_frames": 0
+      },
+      "E13": {
+        "acknowledged_frames": 5,
+        "skipped_frames": 0
+      },
+      "E14": {
+        "acknowledged_frames": 5,
+        "skipped_frames": 0
+      },
+      "E15": {
+        "acknowledged_frames": 5,
+        "skipped_frames": 0
+      },
+      "E16": {
+        "acknowledged_frames": 5,
+        "skipped_frames": 0
+      },
+      "E17": {
+        "acknowledged_frames": 5,
+        "skipped_frames": 0
+      }
+    },
+    "elapsed_s": 160.0,
+    "acknowledged_fps": 80.45
+  },
+  "adapter": {
+    "firmware": "0502h",
+    "hardware": "0003",
+    "serial": "16165743"
+  },
+  "error": null
+}

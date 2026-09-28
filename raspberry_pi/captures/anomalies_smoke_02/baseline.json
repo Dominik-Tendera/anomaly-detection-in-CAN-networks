@@ -1,0 +1,114 @@
+{
+  "format": "can-live-baseline-v1",
+  "ready": true,
+  "dbc_sha256": "46832317aa2b4c2150ae17e59232c0abe80d07c2cbbbc926a3183a25fa0cc03e",
+  "channel": 1,
+  "learning_start_us": 4599305034,
+  "learning_end_us": 4779319861,
+  "min_intervals": 100,
+  "reference_is_normal": "assumption supplied by operator, not verified by detector",
+  "messages": {
+    "6": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 1351.946739394431
+    },
+    "13": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99996.0116731517,
+      "std_us": 4802.743381000452
+    },
+    "26": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100002.68482490283,
+      "std_us": 6917.537596199104
+    },
+    "1028": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99997.4469149528,
+      "std_us": 6254.804521516188
+    },
+    "1034": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 2342.630169430595
+    },
+    "1036": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 200004.2602892104,
+      "std_us": 5748.675655109132
+    },
+    "1038": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 200000.92213570618,
+      "std_us": 5988.297965112037
+    },
+    "1280": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100002.99610894933,
+      "std_us": 6595.89745996517
+    },
+    "1317": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 200005.37263626233,
+      "std_us": 6817.626032480938
+    },
+    "1324": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999962.4916201116,
+      "std_us": 5059.5127731162465
+    },
+    "1326": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999976.7932960892,
+      "std_us": 3091.117338215144
+    },
+    "1327": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 1000037.4413407815,
+      "std_us": 7186.905963650697
+    },
+    "1328": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 2528.2702266767706
+    },
+    "1407": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 4000.326029100761
+    },
+    "1553": {
+      "frame_count": 1801,
+      "interval_count": 1800,
+      "period_us": 99999.03611111117,
+      "std_us": 6424.64081869575
+    },
+    "1760": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100000.45914396892,
+      "std_us": 5737.344193534061
+    },
+    "2026": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999985.4692737429,
+      "std_us": 3356.0971268772237
+    }
+  }
+}

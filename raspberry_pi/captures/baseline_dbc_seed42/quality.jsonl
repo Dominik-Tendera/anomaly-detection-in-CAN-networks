@@ -1,0 +1,6 @@
+{"reason":"stream_decode_error","session_index":0,"start_us":12998884845,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":12998884845,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":13048992845,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":13048992845,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":13140546168,"end_us":null,"count":1}
+{"reason":"sequence_gap","session_index":0,"start_us":13140546168,"end_us":null,"missing":1}

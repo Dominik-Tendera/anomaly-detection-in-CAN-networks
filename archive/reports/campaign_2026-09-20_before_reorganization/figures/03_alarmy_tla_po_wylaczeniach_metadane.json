@@ -1,0 +1,70 @@
+{
+  "sessions": [
+    "anomaly_seed159346_matrix_01",
+    "anomaly_seed159346_matrix_02",
+    "anomaly_seed159346_matrix_03",
+    "anomaly_seed42_matrix_01",
+    "anomaly_seed42_matrix_02",
+    "anomaly_seed42_matrix_03",
+    "anomaly_seed42_matrix_04",
+    "anomaly_seed550994_matrix_01",
+    "anomaly_seed550994_matrix_02",
+    "anomaly_seed550994_matrix_03",
+    "anomaly_seed805238_matrix_01",
+    "anomaly_seed805238_matrix_02",
+    "anomaly_seed805238_matrix_03",
+    "anomaly_seed829730_matrix_01",
+    "anomaly_seed829730_matrix_02",
+    "anomaly_seed829730_matrix_03",
+    "anomaly_seed86_matrix_01",
+    "anomaly_seed86_matrix_02",
+    "anomaly_seed86_matrix_03"
+  ],
+  "values": [
+    {
+      "method": "three_sigma",
+      "clean_background_events": 115,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 4.660366962866504
+    },
+    {
+      "method": "frequency",
+      "clean_background_events": 13,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 0.5268240914544743
+    },
+    {
+      "method": "period",
+      "clean_background_events": 0,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 0.0
+    },
+    {
+      "method": "timeout",
+      "clean_background_events": 0,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 0.0
+    },
+    {
+      "method": "burst",
+      "clean_background_events": 0,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 0.0
+    },
+    {
+      "method": "dbc",
+      "clean_background_events": 0,
+      "clean_background_minutes": 24.676168403971708,
+      "clean_background_events_per_minute": 0.0
+    }
+  ],
+  "filter": "kind=matrix; background_candidate; quality_masked=False",
+  "duration_definition": "[3.05, duration-0.05] s minus epizody, margines 0.05 s przed i 1.05 s po, minus maski jakości.",
+  "sources_sha256": {
+    "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\reports\\campaign_2026-09-20\\method_summary.csv": "3499058dfd26f43fb51dfe7fa024d9822347f33738450824ef23b4949d23e60b",
+    "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\reports\\campaign_2026-09-20\\sessions.csv": "31169448b1c4f9a1a919eec2b4a5a704504901df3d26b40b14118f093e4b6d9a",
+    "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\reports\\campaign_2026-09-20\\events_audit.csv": "db2932c1bb4336bce38000154a599a15837ea2626cb6f97032fc47bc782b16c3",
+    "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\reports\\campaign_2026-09-20\\quality_audit.csv": "54ec958f53671fe6537bf3bc61ebe157f09b5df21f6bded0cc6038eb17f5097a"
+  },
+  "matplotlib": "3.11.2"
+}

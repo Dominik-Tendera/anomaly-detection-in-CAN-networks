@@ -1,0 +1,3 @@
+﻿episode,planned_ms,start_s,end_s,displayed_intervals,first_period_alarm_s,min_displayed_ms,max_displayed_ms,internal_intervals,internal_min_ms,internal_max_ms,internal_mean_ms,internal_std_ms,period_exceedances,sigma_exceedances,period_new_alarms,sigma_new_alarms,period_expected_onsets,sigma_expected_onsets,period_matched_onsets,sigma_matched_onsets
+E01,80.0,15.0,21.0,95,15.316886416020054,65.998,110.569,73,65.998,92.579,80.09423287671233,6.399738543966177,9,39,9,24,9,24,9,24
+E04,125.0,45.0,51.0,68,46.761199466933384,78.998,145.417,46,110.997,139.998,125.03167391304348,6.993883413556123,5,36,5,9,5,9,5,9

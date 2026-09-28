@@ -1,0 +1,108 @@
+{
+  "format": "can-live-baseline-v1",
+  "ready": true,
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "channel": 1,
+  "learning_start_us": 1168106838,
+  "learning_end_us": 1348112641,
+  "min_intervals": 100,
+  "reference_is_normal": "assumption supplied by operator, not verified by detector",
+  "messages": {
+    "6": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 3018.4150679604563
+    },
+    "10": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999992.5530726257,
+      "std_us": 7111.511378011396
+    },
+    "17": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100002.93051695387,
+      "std_us": 5926.439876609726
+    },
+    "27": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99999.34685936634,
+      "std_us": 5752.574263184422
+    },
+    "96": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 100000.70872707048,
+      "std_us": 6504.156657228884
+    },
+    "1025": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99998.2329071707,
+      "std_us": 6191.4296866706945
+    },
+    "1034": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 4592.401233179308
+    },
+    "1037": {
+      "frame_count": 900,
+      "interval_count": 899,
+      "period_us": 199982.63292547286,
+      "std_us": 5477.54699132006
+    },
+    "1325": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999993.5363128497,
+      "std_us": 2937.5816151875874
+    },
+    "1328": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 4085.207461919161
+    },
+    "1329": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999962.6201117317,
+      "std_us": 3844.505273013989
+    },
+    "1407": {
+      "frame_count": 18,
+      "interval_count": 17,
+      "period_us": null,
+      "std_us": 2372.0911598393377
+    },
+    "1425": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99999.34685936634,
+      "std_us": 5718.976743777176
+    },
+    "1553": {
+      "frame_count": 1801,
+      "interval_count": 1800,
+      "period_us": 99999.95111111109,
+      "std_us": 4972.81681632463
+    },
+    "1881": {
+      "frame_count": 180,
+      "interval_count": 179,
+      "period_us": 999995.8770949724,
+      "std_us": 2718.9869676307303
+    },
+    "2021": {
+      "frame_count": 1800,
+      "interval_count": 1799,
+      "period_us": 99995.54585881038,
+      "std_us": 4537.376146841342
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿wariant,opis,liczba_realizacji,timeout,period,three_sigma,frequency,burst,unknown_id,dlc_mismatch,signal_out_of_range,any,regula_podstawowa,period_po_powrocie,three_sigma_po_powrocie
+E01,"wzrost 1,25×",19,0,19,19,0,0,0,0,0,19,frequency,,
+E02,wzrost 2×,19,0,19,19,19,0,0,0,0,19,frequency,,
+E03,wzrost 4×,19,0,19,19,19,19,0,0,0,19,frequency,,
+E04,"spadek do 0,8×",19,0,19,19,0,0,0,0,0,19,frequency,,
+E05,"spadek do 0,5×",19,3,19,19,13,0,0,0,0,19,frequency,,
+E06,"spadek do 0,25×",19,19,19,19,19,0,0,0,0,19,frequency,,
+E07,zanik na 1 s,19,19,0,0,13,0,0,0,0,19,timeout,19,19
+E08,zanik na 5 s,19,19,0,0,19,0,0,0,0,19,timeout,19,19
+E09,4 ramki co 20 ms,19,0,19,19,0,8,0,0,0,19,burst,,
+E10,20 ramek co 10 ms,19,0,19,19,19,19,0,0,0,19,burst,,
+E11,pojedyncza ramka,19,0,0,0,0,0,19,0,0,19,unknown_id,,
+E12,8 ramek co 50 ms,19,0,0,0,0,0,19,0,0,19,unknown_id,,
+E13,krótsze o 1 bajt,19,0,10,10,5,3,0,19,0,19,dlc_mismatch,,
+E14,dłuższe o 1 bajt,19,0,6,6,6,6,0,16,0,16,dlc_mismatch,,
+E15,max + 1,19,0,0,0,0,0,0,0,19,19,signal_out_of_range,,
+E16,min − 1,19,0,0,0,0,0,0,0,16,16,signal_out_of_range,,
+E17,max + 10,19,0,0,0,0,0,0,0,13,13,signal_out_of_range,,

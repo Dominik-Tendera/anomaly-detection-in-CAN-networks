@@ -1,0 +1,154 @@
+{
+  "format": "can-anomaly-ground-truth-v1",
+  "session_id": "anomalies_smoke_03",
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "seed": 42,
+  "time_reference": "generator_monotonic_seconds_since_start_marker",
+  "marker_can_id": 2046,
+  "episodes": [
+    {
+      "episode_id": "E01",
+      "type": "frequency_increase",
+      "start": 15,
+      "end": 23,
+      "can_id": 13,
+      "parameters": {
+        "frequency_factor": 1.5,
+        "variant": "mild",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.06666666666666667
+      },
+      "planned_frames": 120,
+      "acknowledged_frames": 120,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E02",
+      "type": "frequency_increase",
+      "start": 27,
+      "end": 35,
+      "can_id": 13,
+      "parameters": {
+        "frequency_factor": 4.0,
+        "variant": "strong",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.025
+      },
+      "planned_frames": 320,
+      "acknowledged_frames": 320,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E03",
+      "type": "frequency_decrease",
+      "start": 39,
+      "end": 47,
+      "can_id": 13,
+      "parameters": {
+        "frequency_factor": 0.5,
+        "variant": "half_rate",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.2
+      },
+      "planned_frames": 40,
+      "acknowledged_frames": 40,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E04",
+      "type": "disappearance",
+      "start": 51,
+      "end": 59,
+      "can_id": 13,
+      "parameters": {
+        "variant": "temporary_silence"
+      },
+      "planned_frames": 0,
+      "acknowledged_frames": 0,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E05",
+      "type": "burst",
+      "start": 63,
+      "end": 65,
+      "can_id": 26,
+      "parameters": {
+        "count": 8,
+        "interval_s": 0.01,
+        "variant": "short"
+      },
+      "planned_frames": 8,
+      "acknowledged_frames": 8,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E06",
+      "type": "burst",
+      "start": 71,
+      "end": 73,
+      "can_id": 26,
+      "parameters": {
+        "count": 30,
+        "interval_s": 0.01,
+        "variant": "dense"
+      },
+      "planned_frames": 30,
+      "acknowledged_frames": 30,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E07",
+      "type": "unknown_dbc_id",
+      "start": 79,
+      "end": 83,
+      "can_id": 2045,
+      "parameters": {
+        "count": 8,
+        "interval_s": 0.05,
+        "data_hex": "DEADBEEF",
+        "variant": "repeated"
+      },
+      "planned_frames": 8,
+      "acknowledged_frames": 8,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E08",
+      "type": "dlc_mismatch",
+      "start": 87,
+      "end": 91,
+      "can_id": 13,
+      "parameters": {
+        "count": 8,
+        "interval_s": 0.05,
+        "variant": "shorter",
+        "dbc_dlc": 8,
+        "injected_dlc": 7
+      },
+      "planned_frames": 8,
+      "acknowledged_frames": 8,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E09",
+      "type": "out_of_range_signal",
+      "start": 95,
+      "end": 99,
+      "can_id": 6,
+      "parameters": {
+        "count": 8,
+        "interval_s": 0.2,
+        "variant": "above_or_below_limit",
+        "signal": "AccuFunSpeedIncrease",
+        "raw_value": 101,
+        "physical_value": 101.0,
+        "minimum": -100,
+        "maximum": 100
+      },
+      "planned_frames": 8,
+      "acknowledged_frames": 8,
+      "skipped_frames": 0
+    }
+  ]
+}

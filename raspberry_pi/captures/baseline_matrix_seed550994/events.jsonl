@@ -1,0 +1,1 @@
+{"type":"statistical_deviation","method":"three_sigma","ts64":1352322568,"absolute_time":null,"session_index":0,"channel":1,"can_id":2021,"seq":29324,"measured":115417,"expected":{"mean":99995.54585881038,"std":4537.376146841342,"sigma":3.0},"unit":"us","quality":"check_quality_intervals"}

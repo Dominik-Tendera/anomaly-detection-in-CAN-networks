@@ -1,0 +1,21 @@
+# Build output of the STM32CubeIDE project
+can_logger/Debug/
+can_logger/Release/
+
+# Host test artefacts
+tests/can_logger/test_codec
+tests/can_logger/test_codec.exe
+tests/can_logger/vectors.bin
+tests/can_logger/vectors.csv
+tests/can_logger/captures/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local Python environments (on PC and Raspberry Pi)
+.venv/
+.venv-*/
+
+# Historical measurements and DBC copies are intentionally retained.
+# Hardware-free layout tests use temporary directories, not captures/.

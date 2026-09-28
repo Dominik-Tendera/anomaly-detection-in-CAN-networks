@@ -1,0 +1,92 @@
+{
+  "session_id": "analysis",
+  "mode": "replay",
+  "status": "completed",
+  "error": null,
+  "files": {
+    "trace": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554\\input.canbin",
+    "events": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554\\analysis\\events.jsonl",
+    "quality": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554\\analysis\\quality.jsonl"
+  },
+  "bytes_received": 1675815,
+  "elapsed_s": 2.937000000034459,
+  "input_idle_s": 0.031000000017229468,
+  "analysis": {
+    "decoder": {
+      "records_ok": 85100,
+      "crc_errors": 0,
+      "cobs_errors": 0,
+      "short_records": 0,
+      "sync_losses": 0,
+      "unknown_types": 0,
+      "bytes_in": 1675815
+    },
+    "counters": {
+      "records": 85100,
+      "frames_all_channels": 85000,
+      "frames": 85000
+    },
+    "session_record": null,
+    "last_device_time_us": 9999882,
+    "baseline_state": "ready",
+    "periodic_ids": [
+      100,
+      11,
+      512,
+      13,
+      1282,
+      1280,
+      1327,
+      1325,
+      1326,
+      1324
+    ],
+    "ids_without_period": [],
+    "sigma_disabled_zero_variance": [],
+    "events_by_type": {
+      "dlc_mismatch": 85
+    },
+    "events_by_method": {
+      "dbc": 85,
+      "timeout": 0,
+      "period": 0,
+      "frequency": 0,
+      "three_sigma": 0,
+      "burst": 0,
+      "controller": 0
+    },
+    "settings": {
+      "channel": 1,
+      "learn_seconds": 60.0,
+      "min_intervals": 100,
+      "window_seconds": 1.0,
+      "missing_multiplier": 3.0,
+      "period_tolerance": 0.3,
+      "frequency_tolerance": 0.5,
+      "sigma_multiplier": 3.0,
+      "burst_factor": 0.25,
+      "burst_frames": 4,
+      "ignore_ids": [
+        2046
+      ]
+    },
+    "absolute_time_available": false,
+    "quality_note": "Intervals are provisional until diagnostic counters arrive; exclude overlaps during evaluation.",
+    "has_quality_issues": false
+  },
+  "analysis_error": null,
+  "analysis_queue_overflow": false,
+  "analysis_complete": true,
+  "performance": {
+    "analysis_processing_s": 2.9287222,
+    "analysis_records_per_processing_second": 29057.04064386851,
+    "analysis_us_per_record": 34.415066980023504,
+    "analysis_bytes_processed": 1675815,
+    "queue_chunks": 0,
+    "queue_peak_chunks": 15,
+    "queue_capacity_chunks": 128,
+    "peak_resident_memory_bytes": null,
+    "processing_fraction_of_capture_time": 0.9971815457833294
+  },
+  "trace_sha256": "de5bd735841778588ca45532d9c7c34c401f6a28a8afd2edcfa1ae0ee091b861"
+}

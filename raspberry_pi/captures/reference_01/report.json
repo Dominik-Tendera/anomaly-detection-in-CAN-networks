@@ -1,0 +1,92 @@
+{
+  "session_id": "reference_01",
+  "mode": "live",
+  "status": "interrupted",
+  "error": null,
+  "replay_comparison": null,
+  "files": {
+    "trace": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/reference_01/trace.canbin",
+    "events": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/reference_01/events.jsonl",
+    "quality": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/reference_01/quality.jsonl"
+  },
+  "bytes_received": 314266,
+  "elapsed_s": 66.96972872,
+  "input_idle_s": 0.05134282700004178,
+  "analysis": {
+    "decoder": {
+      "records_ok": 8752,
+      "crc_errors": 0,
+      "cobs_errors": 0,
+      "short_records": 0,
+      "sync_losses": 0,
+      "unknown_types": 0,
+      "bytes_in": 314266
+    },
+    "counters": {
+      "records": 8752,
+      "frames_all_channels": 6691,
+      "frames": 6691,
+      "frames_without_time": 100
+    },
+    "session_record": null,
+    "last_device_time_us": 285240966,
+    "baseline_state": "ready",
+    "periodic_ids": [
+      13,
+      26,
+      1028,
+      1034,
+      1036,
+      1038,
+      1280,
+      1322,
+      1553,
+      1760
+    ],
+    "ids_without_period": [],
+    "sigma_disabled_zero_variance": [],
+    "events_by_type": {},
+    "events_by_method": {
+      "dbc": 0,
+      "timeout": 0,
+      "period": 0,
+      "frequency": 0,
+      "three_sigma": 0,
+      "burst": 0,
+      "controller": 0
+    },
+    "settings": {
+      "channel": 1,
+      "learn_seconds": 60.0,
+      "min_intervals": 100,
+      "window_seconds": 1.0,
+      "missing_multiplier": 3.0,
+      "period_tolerance": 0.3,
+      "frequency_tolerance": 0.5,
+      "sigma_multiplier": 3.0,
+      "burst_factor": 0.25,
+      "burst_frames": 4,
+      "ignore_ids": [
+        2046
+      ]
+    },
+    "absolute_time_available": false,
+    "quality_note": "Intervals are provisional until diagnostic counters arrive; exclude overlaps during evaluation.",
+    "has_quality_issues": false
+  },
+  "analysis_error": null,
+  "analysis_queue_overflow": false,
+  "analysis_complete": true,
+  "performance": {
+    "analysis_processing_s": 3.799874376,
+    "analysis_records_per_processing_second": 2303.234037229656,
+    "analysis_us_per_record": 434.17211791590495,
+    "analysis_bytes_processed": 314266,
+    "queue_chunks": 0,
+    "queue_peak_chunks": 3,
+    "queue_capacity_chunks": 128,
+    "peak_resident_memory_bytes": 32169984,
+    "processing_fraction_of_capture_time": 0.05674017871398658
+  },
+  "trace_sha256": "5e443ab6a23b41cf56d70b7170bd59514556bc259b2db794368492166aa5f65e"
+}

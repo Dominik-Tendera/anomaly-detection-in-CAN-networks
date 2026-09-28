@@ -1,0 +1,737 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: AREO_PRESSURE_SENS_B AREO_PRESSURE_SENS_A WHEEL_STRAIN_GAUGE_FR WHEEL_STRAIN_GAUGE_FL ACCU_FANS_DRIVER CAN_open_MASTER RES AREO_PRESSURE_SENS DV_BOARD RPI_LOGGER AREO_TEMP_SENS ANGLE_SENSOR BUZZER BRAKE_LIGHT MAIN SW LV_BMS Power_Module AMS_Master Pedals_frame GPS2CAN ADU FS_Datalogger SmoterIMU
+VAL_TABLE_ DV_state_TS 3 "Error" 2 "ReadyToDrive" 1 "TS_Active" 0 "Standby" ;
+VAL_TABLE_ Rear_Sensor_Error 2 "OVER_RANGE" 1 "UNDER_RANGE" 0 "NO_ERROR" ;
+VAL_TABLE_ Rear_CAN_Error 4 "CAN_FRAME_NOT_ACTUAL" 1 "NO_CAN_FRAME_READ" 0 "NO_ERROR" ;
+VAL_TABLE_ Output_Error 2 "SET_ON_OVERCURRENT" 1 "OVERCURRENT" 0 "NO_ERROR" ;
+VAL_TABLE_ BUZZER_REQUEST 2 "ASE" 1 "R2D" 0 "OFF" ;
+VAL_TABLE_ Imd_Status_t 9 "IMD_STATE_UNKNOWN" 8 "IMD_STATE_INVALID_50HZ" 7 "IMD_STATE_KI31_FAULT_50HZ" 6 "IMD_STATE_INVALID_40HZ" 5 "IMD_STATE_DEVICE_ERROR_40HZ" 4 "IMD_STATE_INVALID_30HZ" 3 "IMD_STATE_SST_BAD_30HZ" 2 "IMD_STATE_SST_GOOD_30HZ" 1 "IMD_STATE_UNDERVOLT_20HZ" 0 "IMD_STATE_NORMAL_10HZ" ;
+VAL_TABLE_ Main_State_t 5 "Error" 4 "TS_Shutdown" 3 "ReadyToDrive" 2 "TS_Active" 1 "Standby" 0 "Init" ;
+VAL_TABLE_ SWAngleSensorTypeTable 5 "SENS_TLE5009_FIR" 4 "TLE5009_AVRG" 3 "MA734" 2 "MA730" 1 "AS5600" 0 "TLE5009" ;
+VAL_TABLE_ BMS_State_t 9 "BMS_TIMEOUT" 8 "BMS_CELLS_BALANCING" 7 "BMS_BALANCING_TRANS" 6 "BMS_TSACTIVE_TRANS" 5 "BMS_ERROR" 4 "BMS_BP_BALANCING" 3 "BMS_TSACTIVE" 2 "BMS_PRECHARGE" 1 "BMS_TSOFF" 0 "BMS_INIT" ;
+VAL_TABLE_ Service_brake_state_enum 3 "Service_brake_state_available" 2 "Service_brake_state_engaged" 1 "Service_brake_state_disengaged" ;
+VAL_TABLE_ AMI_state_enum 6 "AMI_state_autocross" 5 "AMI_state_inspection" 4 "AMI_state_braketest" 3 "AMI_state_trackdrive" 2 "AMI_state_skidpad" 1 "AMI_state_acceleration" ;
+VAL_TABLE_ EBS_state_enum 3 "EBS_state_activated" 2 "EBS_state_armed" 1 "EBS_state_unavailable" ;
+VAL_TABLE_ AS_state_enum 5 "AS_state_finish" 4 "AS_state_emergency_brake" 3 "AS_state_driving " 2 "AS_state_ready" 1 "AS_state_off" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ PedalsErrcode : 0|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AccuFanStatus : 0|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AccuFanCurr : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2 New_Message_218: 8 Vector__XXX
+ SG_ New_Signal_722 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1298 AS_INFO_ID: 8 DV_BOARD
+
+BO_ 513 DV_TORQUE: 8 DV_BOARD
+ SG_ DV_Torque_RR : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ DV_Torque_RL : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ DV_Torque_FR : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ DV_Torque_FL : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 512 DV_CONTROL: 8 DV_BOARD
+ SG_ DV_TS_REQ : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DV_ON_OFF : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RES_SIGNAL : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DV_TEMP : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EBS_front_pressure : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EBS_rear_pressure : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DV_Errors_To_AMI : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TS_4_WHEEL : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1568 AUTONOMUS_MISSION_INDICATOR: 6 Vector__XXX
+ SG_ MissionAutocross : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MissionTrackdrive : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MissionSkidpad : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MissionInspection : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MissionEBSTest : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MissionAcceleration : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 9 DASH_PAGE_CONTENTS_FANS_AND_PUMP: 3 SW
+ SG_ AccuFansMode : 0|8@1+ (1,0) [0|255] ""  SW
+ SG_ RadiatorFansMode : 8|8@1+ (1,0) [0|255] ""  SW
+ SG_ WaterPumpMode : 16|8@1+ (1,0) [0|255] ""  SW
+
+BO_ 65 SENSORS_REAR: 8 Vector__XXX
+ SG_ Press_Sensor_Rear_2 : 23|16@0+ (0.01,0) [0|655.35] "Bar" Vector__XXX
+ SG_ Press_Sensor_Rear_1 : 7|16@0+ (0.01,0) [0|655.35] "Bar" Vector__XXX
+
+BO_ 1881 AMS_IMD_SDC_FRAME: 6 AMS_Master
+ SG_ AMS_SDC_Volt : 24|16@1+ (0.001,0) [0|65.535] "V"  RPI_LOGGER
+ SG_ ImdResistance : 8|16@1+ (1,0) [0|65535] "kOhm"  RPI_LOGGER
+ SG_ ImdStatus : 0|8@1+ (1,0) [0|255] ""  RPI_LOGGER
+
+BO_ 2026 LV_BMS_SOC_FRAME: 8 LV_BMS
+ SG_ LVBMSStateOfCharge : 7|8@0+ (1,0) [0|255] "%"  ADU
+
+BO_ 2025 WHEEL_FR_FORCE_CALIBRATION: 0 SW
+
+BO_ 2024 WHEEL_FR_FORCE: 2 WHEEL_STRAIN_GAUGE_FR
+ SG_ WHEEL_FR_FORCE : 0|12@1+ (1,-1861) [-1861|2234] ""  ADU
+
+BO_ 2023 WHEEL_FL_FORCE_CALIBRATION: 0 SW
+
+BO_ 2022 WHEEL_FL_FORCE: 2 WHEEL_STRAIN_GAUGE_FL
+ SG_ WHEEL_FL_FORCE : 0|12@1+ (1,-1861) [-1861|2234] ""  ADU
+
+BO_ 388 AREO_PRESSURE_SENSORS_CFG_B: 8 AREO_PRESSURE_SENS_B
+
+BO_ 387 AREO_PRESSURE_SENSORS_13_16_B: 8 AREO_PRESSURE_SENS_B
+ SG_ AreoP16B : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP15B : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP14B : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP13B : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 386 AREO_PRESSURE_SENSORS_09_12_B: 8 AREO_PRESSURE_SENS_B
+ SG_ AreoP12B : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP11B : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP10B : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP09B : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 385 AREO_PRESSURE_SENSORS_05_08_B: 8 AREO_PRESSURE_SENS_B
+ SG_ AreoP08B : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP07B : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP06B : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP05B : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 384 AREO_PRESSURE_SENSORS_01_04_B: 8 AREO_PRESSURE_SENS_B
+ SG_ AreoP04B : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP03B : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP02B : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AreoP01B : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 458 AREO_PRESSURE_SENSORS_CFG_A: 8 AREO_PRESSURE_SENS_A
+
+BO_ 32 SW_ANGLE_SENSOR_CALIB: 0 ADU
+
+BO_ 768 Odometer: 8 ADU
+
+BO_ 34 POWERTRAIN_DEBUG: 8 MAIN
+ SG_ YawRateSetpoint : 48|16@1- (0.01,0) [-327.68|327.67] "deg/s"  ADU,DV_BOARD,RPI_LOGGER
+ SG_ MaxMotorOverload : 32|16@1- (0.1,0) [-3276.8|3276.7] "%"  ADU,DV_BOARD,RPI_LOGGER
+ SG_ VehicleSpeedY : 16|16@1- (0.01,0) [-327.68|327.67] "m/s"  ADU,DV_BOARD,RPI_LOGGER
+ SG_ VehicleSpeedX : 0|16@1- (0.01,0) [-327.68|327.67] "m/s"  ADU,DV_BOARD,RPI_LOGGER
+
+BO_ 33 CF_WHEEL_SPEED_CALCULATED: 8 MAIN
+ SG_ CFWheelRRSpeedCalculated : 48|16@1- (1,0) [-32768|32767] "rpm"  RPI_LOGGER
+ SG_ CFWheelRLSpeedCalculated : 32|16@1- (1,0) [-32768|32767] "rpm"  RPI_LOGGER
+ SG_ CFWheelFRSpeedCalculated : 16|16@1- (1,0) [-32768|32767] "rpm"  RPI_LOGGER
+ SG_ CFWheelFLSpeedCalculated : 0|16@1- (1,0) [-32768|32767] "rpm"  RPI_LOGGER
+
+BO_ 35 WHEEL_TARGET_TORQUE: 8 MAIN
+ SG_ WheelRRTargetTorque : 48|16@1- (1,0) [-32768|32767] "0.1% Mn"  RPI_LOGGER
+ SG_ WheelRLTargetTorque : 32|16@1- (1,0) [-32768|32767] "0.1% Mn"  RPI_LOGGER
+ SG_ WheelFRTargetTorque : 16|16@1- (1,0) [-32768|32767] "0.1% Mn"  RPI_LOGGER
+ SG_ WheelFLTargetTorque : 0|16@1- (1,0) [-32768|32767] "0.1% Mn"  RPI_LOGGER
+
+BO_ 36 TorqueCurrentFrame: 8 MAIN
+ SG_ TorqueCurrentRR : 48|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ TorqueCurrentRL : 32|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ TorqueCurrentFR : 16|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ TorqueCurrentFL : 0|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+
+BO_ 37 MagnetizingCurrentFrame: 8 MAIN
+ SG_ MagnetizingCurrentRR : 48|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ MagnetizingCurrentRL : 32|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ MagnetizingCurrentFR : 16|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+ SG_ MagnetizingCurrentFL : 0|16@1- (1,0) [-32768|32767] "A"  RPI_LOGGER
+
+BO_ 38 POWERTRAIN_DEBUG_2: 8 MAIN
+ SG_ MaxWheelLockRatio : 56|8@1+ (1,0) [0|255] "%"  ADU,RPI_LOGGER
+ SG_ MaxWheelSlipRatio : 48|8@1+ (1,0) [0|255] "%"  ADU,RPI_LOGGER
+ SG_ AccuOverheatBar : 40|8@1- (1,0) [-100|100] "%"  ADU,RPI_LOGGER
+ SG_ MotorOverheatBar : 32|8@1- (1,0) [-100|100] "%"  ADU,RPI_LOGGER
+ SG_ AMK_Compute_ErrorCode : 0|32@1+ (1,0) [0|4294967295] ""  ADU,RPI_LOGGER
+
+BO_ 78 LV_BMS_TOTAL_VOLTAGE_FRAME: 1 LV_BMS
+ SG_ LVTotalVoltage : 0|8@1+ (10,0) [0|2550] ""  ADU
+
+BO_ 189 LV_BMS_CURR_FRAME: 2 LV_BMS
+ SG_ LVCurrent : 0|16@1- (1,0) [0|0] "mA"  ADU
+
+BO_ 103 INV_ErrorCode: 8 MAIN
+ SG_ RR_ErrorCode : 48|16@1- (1,0) [0|0] ""  ADU
+ SG_ RL_ErrorCode : 32|16@1- (1,0) [0|0] ""  ADU
+ SG_ FR_ErrorCode : 16|16@1- (1,0) [0|0] ""  ADU
+ SG_ FL_ErrorCode : 0|16@1- (1,0) [0|0] ""  ADU
+
+BO_ 1825 MAIN_SW_REQ_FRAME: 3 MAIN
+ SG_ FieldID : 0|8@1+ (1,0) [0|0] ""  SW
+ SG_ FieldData : 8|16@1+ (1,0) [0|0] ""  SW
+
+BO_ 15 DASH_PAGE_CONTENTS_POWERTRAIN_4: 8 SW
+ SG_ displayedTCRearKp : 16|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCRearKi : 32|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCRearKd : 48|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCRearIBufferMax : 0|16@1- (1,0) [0|0] ""  ADU
+
+BO_ 14 DASH_PAGE_CONTENTS_POWERTRAIN_3: 8 SW
+ SG_ displayedTCFrontKp : 16|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCFrontKi : 32|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCFrontKd : 48|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCFrontIBufferMax : 0|16@1- (1,0) [0|0] ""  ADU
+
+BO_ 13 DASH_PAGE_CONTENTS_POWERTRAIN_2: 8 SW
+ SG_ displayedTCRearSlipTarget : 48|8@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCRearLimit : 56|8@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCFrontSlipTarget : 32|8@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTCFrontLimit : 40|8@1- (1,0) [0|0] ""  ADU
+ SG_ displayedRevLimitTo : 8|8@1- (1,0) [0|0] "rpm"  ADU
+ SG_ displayedRevLimitFrom : 0|8@1- (1,0) [0|0] "rpm"  ADU
+ SG_ displayedLCTmax : 24|8@1- (1,0) [-128|127] "Nm"  ADU
+ SG_ displayedLCCutback : 16|8@1- (1,0) [0|0] ""  ADU
+
+BO_ 12 DASH_PAGE_CONTENTS_POWERTRAIN_1: 7 SW
+ SG_ displayedTVStartSpeed : 32|8@1- (1,0) [0|0] "km/h"  ADU
+ SG_ displayedTVMaxValue : 16|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTVKp : 0|16@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTB_Q : 48|8@1- (1,0) [0|0] ""  ADU
+ SG_ displayedTB_P : 40|8@1- (1,0) [0|0] ""  ADU
+
+BO_ 11 DASH_PAGE_CONTENTS_MAIN_2: 8 SW
+ SG_ displayedVGActive : 2|1@1+ (1,0) [0|255] ""  ADU
+ SG_ displayedTCActive : 1|1@1+ (1,0) [0|255] ""  ADU
+ SG_ displayedPTActive : 3|1@1+ (1,0) [0|255] ""  ADU
+ SG_ displayedTorquePercentRear : 40|8@1+ (1,0) [0|0] "%"  ADU
+ SG_ displayedTorquePercentFront : 32|8@1+ (1,0) [0|255] "%"  ADU
+ SG_ displayedPowerLimit : 8|8@1+ (1,0) [0|255] "kW"  ADU
+ SG_ displayedTVActive : 0|1@1+ (1,0) [0|255] ""  ADU
+ SG_ displayedMinTorque : 24|8@1+ (1,0) [0|255] "Nm"  ADU
+ SG_ displayedMaxTorque : 16|8@1+ (10,0) [0|25.5] "Nm"  ADU
+ SG_ displayedTurnRadiusGain : 56|8@1+ (1,0) [0|255] "%"  ADU
+ SG_ displayedOversteerGain : 48|8@1+ (1,0) [0|255] "%"  ADU
+
+BO_ 1328 ANGLE_SENSOR_COMMAND: 6 ADU
+ SG_ SensorCommand : 39|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+ SG_ SensorChecksum : 47|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+ SG_ Sensor4 : 31|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+ SG_ Sensor3 : 23|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+ SG_ Sensor2 : 15|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+ SG_ Sensor1 : 7|8@0+ (1,0) [0|255] ""  ANGLE_SENSOR
+
+BO_ 10 DASH_PAGE_CONTENTS_MAIN_1: 2 SW
+ SG_ displayedR2DSound : 8|8@1+ (1,0) [0|255] ""  ADU
+ SG_ displayedDriver : 0|8@1+ (1,0) [0|255] ""  ADU
+
+BO_ 6 ACCU_FAN_SPEED_REQUEST: 2 SW
+ SG_ AccuFunSpeedSet : 8|8@1+ (1,0) [0|100] "%"  BRAKE_LIGHT
+ SG_ AccuFunSpeedIncrease : 0|8@1- (1,0) [-100|100] "%"  BRAKE_LIGHT
+
+BO_ 1329 ACCU_FAN_SPEED: 1 ACCU_FANS_DRIVER
+ SG_ AccuFunSpeed : 0|8@1+ (1,0) [0|100] "%"  ADU
+
+BO_ 1034 LV_BMS_REQUEST_FRAME: 1 SW
+ SG_ LVBMSRequestPowerCycle : 0|8@1+ (1,0) [0|255] ""  SW
+
+BO_ 1039 POWER_MODULE_REQUEST: 8 SW
+ SG_ Rear_REQ_OUTPUT4 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_REQ_FAN2 : 23|8@0+ (1,0) [0|255] ""  Power_Module
+ SG_ Rear_MODE : 56|1@0+ (1,0) [0|1] ""  Power_Module
+ SG_ Rear_REQ_PUMP : 7|8@0+ (1,0) [0|255] ""  Power_Module
+ SG_ Rear_REQ_FAN1 : 15|8@0+ (1,0) [0|255] ""  Power_Module
+
+BO_ 1031 GPS_FRAME_7: 8 GPS2CAN
+
+BO_ 1030 GPS_FRAME_6: 8 GPS2CAN
+
+BO_ 1029 GPS_FRAME_5: 8 GPS2CAN
+
+BO_ 1791 NODE_CLAIMING_PROCEDURE_END: 8 CAN_open_MASTER
+
+BO_ 1776 NODE_CLAIMING_PROCEDURE_BEGIN: 8 CAN_open_MASTER
+
+BO_ 1763 NODE_CLAIMING_PROCEDURE_3: 8 CAN_open_MASTER
+
+BO_ 1762 NODE_CLAIMING_PROCEDURE_2: 8 CAN_open_MASTER
+
+BO_ 1761 NODE_CLAIMING_PROCEDURE_1: 8 CAN_open_MASTER
+
+BO_ 1760 DYNAMIC_SDO_REQUEST: 8 CAN_open_MASTER
+
+BO_ 257 SAFETY_RELEVANT_DATA_BEGIN: 8 CAN_open_MASTER
+
+BO_ 118 FLYING_MASTER_END: 8 CAN_open_MASTER
+
+BO_ 113 FLYING_MASTER_BEGIN: 8 CAN_open_MASTER
+
+BO_ 127 INDICATE_ACTIVE_INTERFACE: 8 CAN_open_MASTER
+
+BO_ 1 GLOBAL_FAILSAFE_COMMAND: 8 CAN_open_MASTER
+
+BO_ 529 PDO_RECEIVE: 8 RES
+
+BO_ 401 PDO_TRANSMIT: 8 RES
+
+BO_ 1553 RES_SDO_RECEIVE: 8 RES
+
+BO_ 1425 RES_SDO_TRANSMIT: 8 RES
+
+BO_ 2021 LSS_RECEIVE: 8 CAN_open_MASTER
+
+BO_ 2020 LSS_TRANSMIT: 8 CAN_open_MASTER
+
+BO_ 1809 NMT_NODE_MONITORING: 8 RES
+
+BO_ 256 TIMESTAMP: 8 CAN_open_MASTER
+
+BO_ 145 RES_EMERGENCY: 8 RES
+
+BO_ 128 SYNC: 8 CAN_open_MASTER
+
+BO_ 0 NMT_NODE_CONTROL: 8 CAN_open_MASTER
+
+BO_ 1282 DV_SYSTEM_STATUS: 5 DV_BOARD
+ SG_ ConesCountAll : 23|17@1+ (1,0) [0|4095] ""  FS_Datalogger
+ SG_ ConesCountActual : 15|8@1+ (1,0) [0|255] ""  FS_Datalogger
+ SG_ LapCounter : 11|4@1+ (1,0) [0|15] ""  FS_Datalogger
+ SG_ ServiceBrakeStateEngaged : 9|2@1+ (1,0) [0|1] ""  FS_Datalogger
+ SG_ SteeringState : 8|1@1+ (1,0) [0|255] ""  FS_Datalogger
+ SG_ AMIState : 5|3@1+ (1,0) [0|7] ""  FS_Datalogger
+ SG_ EBSState : 3|2@1+ (1,0) [0|3] ""  FS_Datalogger
+ SG_ ASState : 0|3@1+ (1,0) [0|3] ""  FS_Datalogger
+
+BO_ 1281 DV_DRIVING_DYNAMICS_2: 6 DV_BOARD
+ SG_ AccelerationLongitudinal : 0|16@1- (0.001953125,0) [-31.1296|31.1277] "m/s^2"  FS_Datalogger
+ SG_ AccelerationLateral : 16|16@1- (0.001953125,0) [-31.1296|31.1277] "m/s^2"  FS_Datalogger
+ SG_ YawRate : 32|16@1- (0.001953125,0) [-31.1296|31.1277] "deg/s^2"  FS_Datalogger
+
+BO_ 1280 DV_DRIVING_DYNAMICS_1: 8 DV_BOARD
+ SG_ MotorMomentTarget : 56|8@1- (1,0) [-128|127] "%"  FS_Datalogger
+ SG_ MotorMomentActual : 48|8@1- (1,0) [-128|127] "%"  FS_Datalogger
+ SG_ BrakeHydrTarget : 40|8@1+ (1,0) [0|255] "%"  FS_Datalogger
+ SG_ BrakeHydrActual : 32|8@1+ (1,0) [0|255] "%"  FS_Datalogger
+ SG_ SteeringAngleTarget : 24|8@1- (0.5,0) [-128|127] ""  FS_Datalogger
+ SG_ SteeringAngleActual : 16|8@1- (0.5,0) [-128|127] "deg"  FS_Datalogger
+ SG_ SpeedTarget : 8|8@1+ (1,0) [0|255] "km/h"  FS_Datalogger
+ SG_ SpeedActual : 0|8@1+ (1,0) [0|255] "km/h"  FS_Datalogger
+
+BO_ 1327 AREO_SENS_REAR_2: 8 AREO_TEMP_SENS
+ SG_ SENS_32 : 63|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_30 : 55|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_28 : 47|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_26 : 39|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_24 : 31|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_22 : 23|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_20 : 15|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_18 : 7|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+
+BO_ 1325 AREO_SENS_FRONT_2: 8 AREO_TEMP_SENS
+ SG_ SENS_16 : 63|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_14 : 55|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_12 : 47|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_10 : 39|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_8 : 31|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_6 : 23|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_4 : 15|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_2 : 7|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+
+BO_ 1326 AREO_SENS_REAR_1: 8 AREO_TEMP_SENS
+ SG_ SENS_31 : 63|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_29 : 55|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_27 : 47|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_25 : 39|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_23 : 31|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_21 : 23|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_19 : 15|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_17 : 7|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+
+BO_ 1324 AREO_SENS_FRONT_1: 8 AREO_TEMP_SENS
+ SG_ SENS_15 : 63|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_13 : 55|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_11 : 47|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_9 : 39|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_7 : 31|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_5 : 23|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_3 : 15|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+ SG_ SENS_1 : 7|8@0+ (0.5,0) [0|127.5] "C"  RPI_LOGGER,ADU
+
+BO_ 1323 ANGLE_SENSOR_RL: 8 ANGLE_SENSOR
+ SG_ WASAngleRLError : 47|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleRLError : 39|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleRL : 7|32@0- (1E-06,0) [-2147.483648|2147.483647] "deg"  MAIN,ADU
+
+BO_ 1322 ANGLE_SENSOR_RR: 8 ANGLE_SENSOR
+ SG_ WASAngleRRError : 47|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleRRError : 39|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleRR : 7|32@0- (1E-06,0) [-2147.483648|2147.483647] "deg"  MAIN,ADU
+
+BO_ 1321 ANGLE_SENSOR_FL: 8 ANGLE_SENSOR
+ SG_ WASAngleFLError : 47|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleFLError : 39|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleFL : 7|32@0- (1E-06,0) [-2147.483648|2147.483647] "deg"  MAIN,ADU
+
+BO_ 1320 ANGLE_SENSOR_FR: 8 ANGLE_SENSOR
+ SG_ WASAngleFRError : 47|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleFRError : 39|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleFR : 7|32@0- (1E-06,0) [-2147.483648|2147.483647] "deg"  MAIN,ADU
+
+BO_ 20 SW_SENSOR: 8 ANGLE_SENSOR
+ SG_ SWAngleSensorType : 55|8@0- (1,0) [0|0] "" Vector__XXX
+ SG_ WASAngleSWError : 47|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ AngleError : 39|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ Angle : 7|32@0- (1E-06,0) [-2147.483648|2147.483647] "deg"  MAIN,ADU
+
+BO_ 1318 BRAKE_LIGHT_FRAME: 1 ADU
+ SG_ BrakeLightEnable : 0|8@1- (1,0) [0|0] ""  BRAKE_LIGHT
+
+BO_ 1317 BUZZER_FRAME: 1 ADU
+ SG_ BuzzerEnable : 0|2@1+ (1,0) [0|2] ""  BUZZER
+
+BO_ 1316 AMS_IVT_GENERAL: 6 AMS_Master
+ SG_ IVT_V_Precharge : 32|16@1+ (0.01,0) [0|655.35] "V"  ADU
+ SG_ IVT_V_Accu : 16|16@1+ (0.01,0) [0|655.35] "V"  ADU
+ SG_ IVT_I : 0|16@1- (0.01,0) [-327.68|327.67] "A"  ADU
+
+BO_ 1824 SW_MAIN_REQ_FRAME: 3 SW
+ SG_ FieldID : 0|8@1+ (1,0) [0|0] ""  MAIN
+ SG_ FieldData : 8|16@1+ (1,0) [0|0] ""  MAIN
+
+BO_ 1036 LV_BMS_TEMP_FRAME: 8 LV_BMS
+ SG_ LVBMSErrorFrame : 56|8@1+ (1,0) [0|255] ""  ADU
+ SG_ LVBMSState : 48|8@1+ (1,0) [0|255] ""  ADU
+ SG_ LVTemp5 : 40|8@1+ (1,0) [0|255] "C"  ADU
+ SG_ LVTemp4 : 32|8@1+ (1,0) [0|255] "C"  ADU
+ SG_ LVTemp3 : 24|8@1+ (1,0) [0|255] "C"  ADU
+ SG_ LVTemp2 : 16|8@1+ (1,0) [0|255] "C"  ADU
+ SG_ LVTemp1 : 8|8@1+ (1,0) [0|255] "C"  ADU
+ SG_ LVTemp0 : 0|8@1+ (1,0) [0|255] "C"  ADU
+
+BO_ 1035 LV_BMS_VOLTAGE_FRAME: 8 LV_BMS
+ SG_ LVVoltage5 : 45|9@1+ (10,0) [0|5110] "mV"  ADU
+ SG_ LVVoltage4 : 36|9@1+ (10,0) [0|5110] "mV"  ADU
+ SG_ LVVoltage3 : 27|9@1+ (10,0) [0|5110] "mV"  ADU
+ SG_ LVVoltage2 : 18|9@1+ (10,0) [0|5110] "mV"  ADU
+ SG_ LVVoltage1 : 9|9@1+ (10,0) [0|5110] "mV"  ADU
+ SG_ LVVoltage0 : 0|9@1+ (10,0) [0|5110] "mV"  ADU
+
+BO_ 1038 POWER_MODULE_ERROR: 8 Power_Module
+ SG_ Rear_OUTPUT4_Error : 41|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ Rear_FAN2_Error : 33|2@0- (1,0) [0|2] "" Vector__XXX
+ SG_ Rear_FAN1_Error : 25|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ Rear_Pump_Error : 17|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ REAR_SENSOR_ERROR : 9|2@0- (1,0) [0|2] "" Vector__XXX
+ SG_ REAR_CAN_ERROR : 1|2@0- (1,0) [0|2] "" Vector__XXX
+
+BO_ 1407 V_T_REQUEST_FRAME: 8 ADU
+ SG_ PrintVT : 0|8@1+ (1,0) [0|255] ""  AMS_Master
+
+BO_ 95 AMS_PWR_LIMITS_FRAME: 4 AMS_Master
+ SG_ DischargeCurrentLimit : 0|16@1+ (1,0) [0|65535] ""  ADU,MAIN
+ SG_ ChargeCurrentLimit : 16|16@1+ (1,0) [0|65535] ""  ADU,MAIN
+
+BO_ 96 AMS_STATUS_FRAME: 8 AMS_Master
+ SG_ AMS_TSAL_GREEN : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMS_Error_Latch : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMS_IMD_Error_Latch : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ JaggoracyProc : 39|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ AMS_SDC_State : 31|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ AMS_StateOfCharge : 23|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ AMS_State : 7|8@0+ (1,0) [0|255] ""  ADU,MAIN
+
+BO_ 97 AMS_ERROR: 8 AMS_Master
+ SG_ AMS_Warrnig : 32|32@1+ (1,0) [0|65535] ""  MAIN,ADU
+ SG_ AMS_Error : 0|32@1+ (1,0) [0|65535] ""  MAIN,ADU
+
+BO_ 98 AMS_SLAVE_FRAME: 8 AMS_Master
+ SG_ AccuMinCellTemp : 48|16@1+ (0.1,0) [0|65535] "C"  BRAKE_LIGHT,ADU
+ SG_ AccuMaxCellTemp : 32|16@1+ (0.1,0) [0|65535] "C"  BRAKE_LIGHT,ADU
+ SG_ AccuMinCellVoltage : 16|16@1+ (1,0) [0|65535] "mV"  BRAKE_LIGHT,ADU
+ SG_ AccuMaxCellVoltage : 0|16@1+ (1,0) [0|65535] "mV"  BRAKE_LIGHT,ADU
+
+BO_ 101 AMS_MAIN_COMMAND_FRAME: 8 MAIN
+ SG_ AMSCommand : 7|8@0+ (1,0) [0|255] ""  ADU,AMS_Master
+
+BO_ 1793 SW_PEDALS_REQ_FRAME: 8 SW
+ SG_ PedalsCalib : 15|8@0+ (1,0) [0|255] ""  Pedals_frame
+ SG_ BBUpdate : 7|8@0+ (1,0) [0|255] ""  Pedals_frame
+
+BO_ 100 PEDALS_DEBUG: 8 Pedals_frame
+ SG_ Pedals_OK : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR2_ZERO_CROSS : 50|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR2_UNDER_THE_RANGE : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR2_OVER_THE_RANGE : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR2_GENERIC_ERROR : 62|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR2_DISCONNECTED : 63|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR1_ZERO_CROSS : 61|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR1_UNDER_THE_RANGE : 60|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR1_OVER_THE_RANGE : 59|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR1_GENERIC_ERROR : 57|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_SENSOR1_DISCONNECTED : 58|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_PEDALS_UT : 51|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_PEDALS_OT : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_PEDALS_ERROR : 54|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pedals_PEDALS_ERR_DETECTION : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AppsDiff : 39|16@0- (1,0) [-32768|32767] ""  ADU
+ SG_ Apps2ADC : 23|16@0+ (1,0) [0|65535] ""  ADU
+ SG_ Apps1ADC : 7|16@0+ (1,0) [0|65535] ""  ADU
+
+BO_ 1033 IMU_ACCELERATION_FRAME: 6 GPS2CAN
+ SG_ HRZAccel : 39|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+ SG_ HRYAccel : 23|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+ SG_ HRXAccel : 7|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+
+BO_ 1032 IMU_ANGULAR_FRAME: 6 GPS2CAN
+ SG_ HRZAngRate : 39|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+ SG_ HRYAngRate : 23|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+ SG_ HRXAngRate : 7|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+
+BO_ 1028 GPS_FRAME_4: 8 GPS2CAN
+ SG_ UTCYear : 7|8@0+ (1,2000) [2000|2255] ""  ADU,MAIN
+ SG_ UTCSecond : 47|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ UTCMonth : 15|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ UTCMinute : 39|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ UTCMillisecond : 55|16@0+ (0.01525878906,0) [0|999.9847410471] ""  ADU,MAIN
+ SG_ UTCHour : 31|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ UTCDay : 23|8@0+ (1,0) [0|255] ""  ADU,MAIN
+
+BO_ 1027 GPS_FRAME_3: 8 GPS2CAN
+ SG_ XAcceleration : 23|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+ SG_ ZAcceleration : 55|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+ SG_ YAcceleration : 39|16@0- (0.01,0) [-327.68|327.67] "g"  ADU,MAIN
+ SG_ ZAngleRate : 7|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+
+BO_ 1026 GPS_FRAME_2: 8 GPS2CAN
+ SG_ YAngleRate : 55|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+ SG_ XAngleRate : 39|16@0- (0.01,0) [-327.68|327.67] "deg/s"  ADU,MAIN
+ SG_ HeadingVehicle1 : 23|16@0+ (1,0) [0|65535] ""  ADU,MAIN
+ SG_ HeadingMotion : 7|16@0+ (1,0) [0|65535] ""  ADU,MAIN
+
+BO_ 1025 GPS_FRAME_1: 8 GPS2CAN
+ SG_ Noise : 39|8@0+ (1,0) [0|255] ""  ADU
+ SG_ IMUFusionStatus : 60|3@0+ (1,0) [0|7] ""  ADU
+ SG_ Speed : 7|16@0- (0.036,0) [-1179.648|1179.612] "km/h"  ADU,MAIN
+ SG_ SatellitesNumber : 47|8@0+ (1,0) [0|255] ""  ADU,MAIN
+ SG_ Height : 23|16@0- (1,0) [-32768|32767] "m"  ADU,MAIN
+ SG_ GPSStatus : 63|3@0+ (1,0) [0|7] ""  ADU,MAIN
+ SG_ GPSFrameIndex : 55|4@0+ (1,0) [0|15] ""  ADU,MAIN
+ SG_ EmptyFrameIndex : 51|4@0+ (1,0) [0|15] ""  ADU,MAIN
+
+BO_ 1024 GPS_FRAME_0: 8 GPS2CAN
+ SG_ Latitude : 7|32@0- (1E-07,0) [-214.7483648|214.7483647] ""  ADU,MAIN
+ SG_ Longitude : 39|32@0- (1E-07,0) [-214.7483648|214.7483647] ""  ADU,MAIN
+
+BO_ 17 START_BUTTONS: 2 ADU
+ SG_ HvOn : 0|8@1+ (1,0) [0|255] ""  MAIN
+ SG_ TS_on : 8|8@1+ (1,0) [0|255] ""  MAIN
+
+BO_ 25 INV_FR: 8 MAIN
+ SG_ WheelFRSpeed : 0|16@1- (1,0) [-32768|32767] "rpm"  DV_BOARD,ADU
+ SG_ WheelFRTempInverter : 16|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelFRTempMotor : 32|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelFRTempIGBT : 48|16@1+ (0.1,0) [0|255] "C"  DV_BOARD,ADU
+
+BO_ 27 INV_RR: 8 MAIN
+ SG_ WheelRRTempInverter : 16|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelRRTempMotor : 32|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelRRTempIGBT : 48|16@1+ (0.1,0) [0|65535] "C"  DV_BOARD,ADU
+ SG_ WheelRRSpeed : 0|16@1- (1,0) [-32768|32767] "rpm"  DV_BOARD,ADU
+
+BO_ 26 INV_RL: 8 MAIN
+ SG_ WheelRLTempInverter : 16|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelRLTempMotor : 32|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelRLTempIGBT : 48|16@1+ (0.1,0) [0|65535] "C"  DV_BOARD,ADU
+ SG_ WheelRLSpeed : 0|16@1- (1,0) [-32768|32767] "rpm"  DV_BOARD,ADU
+
+BO_ 24 INV_FL: 8 MAIN
+ SG_ WheelFLSpeed : 0|16@1- (1,0) [-32768|32767] "rpm"  DV_BOARD,ADU
+ SG_ WheelFLTempInverter : 16|16@1+ (0.1,0) [0|6553.5] "C"  DV_BOARD,ADU
+ SG_ WheelFLTempMotor : 32|16@1+ (0.1,0) [0|65535] "C"  DV_BOARD,ADU
+ SG_ WheelFLTempIGBT : 48|16@1+ (0.1,0) [0|65535] "C"  DV_BOARD,ADU
+
+BO_ 7 SW: 8 SW
+ SG_ Menulndex : 8|8@1+ (1,0) [0|255] ""  ADU
+ SG_ ActiveTile : 0|8@1+ (1,0) [0|255] ""  ADU
+ SG_ AduPage : 16|8@1+ (1,0) [0|255] ""  ADU
+
+BO_ 102 MAIN_STATUS_FRAME: 8 MAIN
+ SG_ MainMCUTemp : 32|16@1+ (0.1,0) [0|65535] "C"  RPI_LOGGER
+ SG_ AMKError : 31|8@0+ (1,0) [0|255] ""  SW,ADU
+ SG_ AMS : 21|1@0+ (1,0) [0|255] ""  SW,ADU
+ SG_ IMD : 22|1@0+ (1,0) [0|1] ""  SW,ADU
+ SG_ TSOff : 23|1@0+ (1,0) [0|1] ""  SW,ADU
+ SG_ Buzzer : 15|8@0+ (1,0) [0|255] ""  SW,ADU
+ SG_ MainState : 7|8@0+ (1,0) [0|255] ""  SW,ADU
+
+BO_ 99 PEDALS_FRAME: 8 Pedals_frame
+ SG_ PedalsState : 55|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ PedalsBrk2 : 39|16@0+ (0.1,0) [0|6553.5] "Bar"  MAIN,ADU
+ SG_ PedalsBrk1 : 23|16@0+ (0.1,0) [0|6553.5] "Bar"  MAIN,ADU
+ SG_ PedalsBB : 63|8@0+ (1,0) [0|255] ""  MAIN,ADU
+ SG_ PedalsAcc : 7|16@0+ (1,0) [0|1000] ""  MAIN,ADU
+
+BO_ 1037 POWER_MODULE: 8 Power_Module
+ SG_ Rear_OUTPUT4_Current : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_FAN2_Current : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_FAN1_Current : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_PUMP_Current : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_OUTPUT4_State : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_FAN2_State : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_FAN1_State : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rear_PUMP_State : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1877 FS_DATALOGGER_RESERVED_6: 8 FS_Datalogger
+
+BO_ 1876 FS_DATALOGGER_RESERVED_5: 8 FS_Datalogger
+
+BO_ 1875 FS_DATALOGGER_RESERVED_4: 8 FS_Datalogger
+
+BO_ 1874 FS_DATALOGGER_RESERVED_3: 8 FS_Datalogger
+
+BO_ 1873 FS_DATALOGGER_RESERVED_2: 8 FS_Datalogger
+
+BO_ 1872 FS_DATALOGGER_RESERVED_1: 8 FS_Datalogger
+
+BO_ 1072 FS_DATALOGGER_STATUS: 6 FS_Datalogger
+ SG_ Current : 32|16@1+ (64,0) [0|4194240] "mA"  DV_BOARD
+ SG_ Voltage : 16|16@1+ (16,0) [0|1048560] "mV"  DV_BOARD
+ SG_ StatusTriggeredCurrent : 11|1@1- (1,0) [0|0] ""  DV_BOARD
+ SG_ StatusTriggeredVoltage : 10|1@1- (1,0) [0|0] ""  DV_BOARD
+ SG_ StatusLogging : 9|1@1- (1,0) [0|0] ""  DV_BOARD
+ SG_ StatusReady : 8|1@1- (1,0) [0|0] ""  DV_BOARD
+ SG_ MsgCnt : 0|8@1+ (1,0) [0|255] ""  DV_BOARD
+
+BO_ 457 AREO_PRESSURE_SENSORS_13_16_A: 8 AREO_PRESSURE_SENS_A
+ SG_ AreoP16A : 55|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP15A : 39|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP14A : 23|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP13A : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 456 AREO_PRESSURE_SENSORS_09_12_A: 8 AREO_PRESSURE_SENS_A
+ SG_ AreoP09A : 55|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP12A : 39|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP11A : 23|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP10A : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 455 AREO_PRESSURE_SENSORS_05_08_A: 8 AREO_PRESSURE_SENS_A
+ SG_ AreoP08A : 55|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP07A : 39|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP06A : 23|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP05A : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 454 AREO_PRESSURE_SENSORS_01_04_A: 8 AREO_PRESSURE_SENS_A
+ SG_ AreoP04A : 55|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP03A : 39|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP02A : 23|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+ SG_ AreoP01A : 7|16@0+ (1,0) [0|65535] ""  RPI_LOGGER
+
+BO_ 769 SMOTER_IMU_ACC_FRAME: 6 SmoterIMU
+ SG_ SmoterIMUAccZ : 39|16@0- (0.001,0) [-32.768|32.767] "m/s^2"  MAIN
+ SG_ SmoterIMUAccY : 23|16@0- (0.001,0) [-32.768|32.767] "m/s^2"  MAIN
+ SG_ SmoterIMUAccX : 7|16@0- (0.001,0) [-32.768|32.767] "m/s^2"  MAIN
+
+BO_ 770 SMOTER_IMU_GYRO_FRAME: 6 SmoterIMU
+ SG_ SmoterIMUGyroZ : 39|16@0- (0.001,0) [-32.768|32.767] "rad/s"  MAIN
+ SG_ SmoterIMUGyroY : 23|16@0- (0.001,0) [-32.768|32.767] "rad/s"  MAIN
+ SG_ SmoterIMUGyroX : 7|16@0- (0.001,0) [-32.768|32.767] "rad/s"  MAIN
+
+BO_ 771 SMOTER_IMU_QUATERNION_FRAME: 8 SmoterIMU
+ SG_ SmoterIMUQuaternionZ : 55|16@0- (0.0001,0) [-3.2768|3.2767] ""  MAIN
+ SG_ SmoterIMUQuaternionY : 39|16@0- (0.0001,0) [-3.2768|3.2767] ""  MAIN
+ SG_ SmoterIMUQuaternionX : 23|16@0- (0.0001,0) [-3.2768|3.2767] ""  MAIN
+ SG_ SmoterIMUQuaternionW : 7|16@0- (0.0001,0) [-3.2768|3.2767] ""  MAIN
+
+BO_TX_BU_ 2025 : WHEEL_STRAIN_GAUGE_FR,SW;
+BO_TX_BU_ 2023 : WHEEL_STRAIN_GAUGE_FL,SW;
+BO_TX_BU_ 1034 : LV_BMS,SW;
+BO_TX_BU_ 1039 : MAIN,SW;
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "Period" INT 0 10000;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "Period" 100;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "Period" BO_ 9 1000;
+BA_ "Period" BO_ 1881 1000;
+BA_ "Period" BO_ 2026 1000;
+BA_ "Period" BO_ 2024 10;
+BA_ "Period" BO_ 2022 10;
+BA_ "Period" BO_ 34 10;
+BA_ "Period" BO_ 33 10;
+BA_ "Period" BO_ 35 10;
+BA_ "Period" BO_ 36 5;
+BA_ "Period" BO_ 37 5;
+BA_ "Period" BO_ 38 10;
+BA_ "Period" BO_ 1328 10000;
+BA_ "Period" BO_ 10 1000;
+BA_ "Period" BO_ 6 10000;
+BA_ "Period" BO_ 1329 1000;
+BA_ "Period" BO_ 1034 10000;
+BA_ "Period" BO_ 1039 200;
+BA_ "Period" BO_ 401 30;
+BA_ "Period" BO_ 1327 1000;
+BA_ "Period" BO_ 1325 1000;
+BA_ "Period" BO_ 1326 1000;
+BA_ "Period" BO_ 1324 1000;
+BA_ "Period" BO_ 1323 5;
+BA_ "Period" BO_ 1322 5;
+BA_ "Period" BO_ 1321 5;
+BA_ "Period" BO_ 1320 5;
+BA_ "Period" BO_ 20 5;
+BA_ "Period" BO_ 1317 200;
+BA_ "Period" BO_ 1316 4;
+BA_ "Period" BO_ 1036 200;
+BA_ "Period" BO_ 1035 200;
+BA_ "Period" BO_ 1038 200;
+BA_ "Period" BO_ 1407 10000;
+BA_ "Period" BO_ 95 4;
+BA_ "Period" BO_ 1033 10;
+BA_ "Period" BO_ 1032 10;
+BA_ "Period" BO_ 99 20;
+BA_ "Period" BO_ 1037 200;
+BA_ "Period" BO_ 769 10;
+BA_ "Period" BO_ 770 10;
+BA_ "Period" BO_ 771 10;
+VAL_ 512 DV_TS_REQ 3 "Error" 2 "ReadyToDrive" 1 "TS_Active" 0 "Standby" ;
+VAL_ 1881 ImdStatus 9 "IMD_STATE_UNKNOWN" 8 "IMD_STATE_INVALID_50HZ" 7 "IMD_STATE_KI31_FAULT_50HZ" 6 "IMD_STATE_INVALID_40HZ" 5 "IMD_STATE_DEVICE_ERROR_40HZ" 4 "IMD_STATE_INVALID_30HZ" 3 "IMD_STATE_SST_BAD_30HZ" 2 "IMD_STATE_SST_GOOD_30HZ" 1 "IMD_STATE_UNDERVOLT_20HZ" 0 "IMD_STATE_NORMAL_10HZ" ;
+VAL_ 1282 ServiceBrakeStateEngaged 3 "Service_brake_state_available" 2 "Service_brake_state_engaged" 1 "Service_brake_state_disengaged" ;
+VAL_ 1282 AMIState 6 "AMI_state_autocross" 5 "AMI_state_inspection" 4 "AMI_state_braketest" 3 "AMI_state_trackdrive" 2 "AMI_state_skidpad" 1 "AMI_state_acceleration" ;
+VAL_ 1282 EBSState 3 "EBS_state_activated" 2 "EBS_state_armed" 1 "EBS_state_unavailable" ;
+VAL_ 1282 ASState 5 "AS_state_finish" 4 "AS_state_emergency_brake" 3 "AS_state_driving " 2 "AS_state_ready" 1 "AS_state_off" ;
+VAL_ 20 SWAngleSensorType 5 "SENS_TLE5009_FIR" 4 "TLE5009_AVRG" 3 "MA734" 2 "MA730" 1 "AS5600" 0 "TLE5009" ;
+VAL_ 1317 BuzzerEnable 2 "ASE" 1 "R2D" 0 "OFF" ;
+VAL_ 1038 Rear_OUTPUT4_Error 2 "SET_ON_OVERCURRENT" 1 "OVERCURRENT" 0 "NO_ERROR" ;
+VAL_ 1038 Rear_FAN2_Error 2 "SET_ON_OVERCURRENT" 1 "OVERCURRENT" 0 "NO_ERROR" ;
+VAL_ 1038 Rear_FAN1_Error 2 "SET_ON_OVERCURRENT" 1 "OVERCURRENT" 0 "NO_ERROR" ;
+VAL_ 1038 Rear_Pump_Error 2 "SET_ON_OVERCURRENT" 1 "OVERCURRENT" 0 "NO_ERROR" ;
+VAL_ 96 AMS_State 9 "BMS_TIMEOUT" 8 "BMS_CELLS_BALANCING" 7 "BMS_BALANCING_TRANS" 6 "BMS_TSACTIVE_TRANS" 5 "BMS_ERROR" 4 "BMS_BP_BALANCING" 3 "BMS_TSACTIVE" 2 "BMS_PRECHARGE" 1 "BMS_TSOFF" 0 "BMS_INIT" ;
+VAL_ 102 MainState 5 "Error" 4 "TS_Shutdown" 3 "ReadyToDrive" 2 "TS_Active" 1 "Standby" 0 "Init" ;
+

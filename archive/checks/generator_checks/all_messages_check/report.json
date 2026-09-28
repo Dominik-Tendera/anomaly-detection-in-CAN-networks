@@ -1,0 +1,514 @@
+{
+  "session_id": "all_messages_check",
+  "mode": "dry_run",
+  "status": "completed",
+  "statistics": {
+    "commands_attempted": 248,
+    "commands_acknowledged": 248,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.0,
+    "per_id": {
+      "0": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "6": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "7": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "9": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "10": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "11": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "12": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "13": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "14": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "15": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "17": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "20": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "24": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "25": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "26": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "27": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "32": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "33": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "34": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "35": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "36": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "37": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "38": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "65": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "78": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "95": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "96": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "97": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "98": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "99": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "100": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "101": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "102": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "103": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "113": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "118": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "127": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "128": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "145": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "189": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "256": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "257": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "384": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "385": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "386": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "387": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "388": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "401": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "454": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "455": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "456": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "457": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "458": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "512": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "513": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "529": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "768": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "769": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "770": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "771": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1024": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1025": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1026": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1027": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1028": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1029": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1030": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1031": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1032": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1033": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1034": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1035": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1036": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1037": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1038": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1039": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1072": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1280": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1281": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1282": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1298": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1316": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1317": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1318": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1320": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1321": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1322": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1323": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1324": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1325": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1326": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1327": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1328": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1329": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1407": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1425": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1553": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1568": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1760": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1761": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1762": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1763": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1776": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1791": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1793": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1809": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1824": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1825": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1872": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1873": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1874": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1875": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1876": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1877": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "1881": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2020": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2021": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2022": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2023": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2024": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2025": {
+        "acknowledged": 2,
+        "skipped": 0
+      },
+      "2026": {
+        "acknowledged": 2,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 2.0,
+    "acknowledged_fps": 124.0
+  },
+  "adapter": {},
+  "error": null,
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN."
+}

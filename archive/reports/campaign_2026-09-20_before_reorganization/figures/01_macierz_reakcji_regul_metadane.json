@@ -1,0 +1,49 @@
+{
+  "sources": {
+    "episodes.csv": "e3bb906f47e7cffb2b54028dc24951f0ba13e588fcbcac0aced7f875934f3d77",
+    "scenario_summary.csv": "acaacb6b15f4b885fac09c8e8ea42fbe845a6e0dec9708aaaf4ac7c73b048b9f"
+  },
+  "filter": "kind == matrix",
+  "sessions": [
+    "anomaly_seed159346_matrix_01",
+    "anomaly_seed159346_matrix_02",
+    "anomaly_seed159346_matrix_03",
+    "anomaly_seed42_matrix_01",
+    "anomaly_seed42_matrix_02",
+    "anomaly_seed42_matrix_03",
+    "anomaly_seed42_matrix_04",
+    "anomaly_seed550994_matrix_01",
+    "anomaly_seed550994_matrix_02",
+    "anomaly_seed550994_matrix_03",
+    "anomaly_seed805238_matrix_01",
+    "anomaly_seed805238_matrix_02",
+    "anomaly_seed805238_matrix_03",
+    "anomaly_seed829730_matrix_01",
+    "anomaly_seed829730_matrix_02",
+    "anomaly_seed829730_matrix_03",
+    "anomaly_seed86_matrix_01",
+    "anomaly_seed86_matrix_02",
+    "anomaly_seed86_matrix_03"
+  ],
+  "episodes": 323,
+  "excluded_integration_episodes": 9,
+  "new_alarm_any_rule": 311,
+  "new_alarm_primary_rule": 256,
+  "after_return_episodes": {
+    "E07": {
+      "period": 19,
+      "three_sigma": 19
+    },
+    "E08": {
+      "period": 19,
+      "three_sigma": 19
+    }
+  },
+  "after_return_note": "Dodatkowe oznaczenie; nie zmienia komórek, kolorów ani sum głównej oceny.",
+  "assignment": "event_types / any_onset; bez core_*, bez ponownego przypisywania czasów",
+  "quality": "pełny zbiór 323 epizodów, bez wykluczania epizodów nakładających się na problemy jakości",
+  "unit": "epizody z nowym alarmem / liczba sesji pomiarowych",
+  "software": {
+    "matplotlib": "3.11.2"
+  }
+}

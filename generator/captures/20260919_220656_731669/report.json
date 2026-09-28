@@ -1,0 +1,63 @@
+{
+  "session_id": "20260919_220656_731669",
+  "mode": "hardware",
+  "status": "interrupted",
+  "statistics": {
+    "commands_attempted": 3643,
+    "commands_acknowledged": 3643,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.01600000000325963,
+    "per_id": {
+      "0": {
+        "acknowledged": 365,
+        "skipped": 0
+      },
+      "1": {
+        "acknowledged": 365,
+        "skipped": 0
+      },
+      "2": {
+        "acknowledged": 365,
+        "skipped": 0
+      },
+      "6": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "7": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "9": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "10": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "11": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "12": {
+        "acknowledged": 364,
+        "skipped": 0
+      },
+      "13": {
+        "acknowledged": 364,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 36.42199999996228,
+    "acknowledged_fps": 100.02196474668531
+  },
+  "adapter": {
+    "firmware": "0502h",
+    "hardware": "0003",
+    "serial": "16165743"
+  },
+  "error": "Ctrl+C",
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN.",
+  "received_frames_while_waiting": 0
+}

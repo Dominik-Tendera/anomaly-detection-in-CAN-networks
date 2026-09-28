@@ -1,0 +1,113 @@
+{
+  "session_id": "anomaly_seed550994_matrix_03",
+  "mode": "live",
+  "status": "interrupted",
+  "error": null,
+  "replay_comparison": null,
+  "files": {
+    "trace": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/anomaly_seed550994_matrix_03/trace.canbin",
+    "events": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/anomaly_seed550994_matrix_03/events.jsonl",
+    "quality": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/anomaly_seed550994_matrix_03/quality.jsonl"
+  },
+  "trace_recording": {
+    "enabled": true,
+    "path": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/captures_live/anomaly_seed550994_matrix_03/trace.canbin",
+    "bytes_written": 696765
+  },
+  "bytes_received": 696765,
+  "elapsed_s": 164.00890060300003,
+  "input_idle_s": 0.15308423500027857,
+  "analysis": {
+    "decoder": {
+      "records_ok": 17910,
+      "crc_errors": 0,
+      "cobs_errors": 0,
+      "short_records": 0,
+      "sync_losses": 0,
+      "unknown_types": 0,
+      "bytes_in": 696765
+    },
+    "counters": {
+      "records": 17910,
+      "frames_all_channels": 12871,
+      "frames": 12871
+    },
+    "session_record": null,
+    "last_device_time_us": 2173135117,
+    "baseline_state": "ready",
+    "periodic_ids": [
+      10,
+      17,
+      27,
+      96,
+      1025,
+      1037,
+      1325,
+      1329,
+      1425,
+      1553,
+      1881,
+      2021
+    ],
+    "ids_without_period": [
+      6,
+      1034,
+      1328,
+      1407
+    ],
+    "sigma_disabled_zero_variance": [],
+    "events_by_type": {
+      "missing_frame": 33,
+      "frequency_decrease": 27,
+      "period_violation": 30,
+      "statistical_deviation": 61,
+      "frequency_increase": 5,
+      "burst": 8,
+      "unknown_id": 2,
+      "dlc_mismatch": 2,
+      "signal_out_of_range": 3
+    },
+    "events_by_method": {
+      "dbc": 7,
+      "timeout": 33,
+      "period": 30,
+      "frequency": 32,
+      "three_sigma": 61,
+      "burst": 8,
+      "controller": 0
+    },
+    "settings": {
+      "channel": 1,
+      "learn_seconds": 60.0,
+      "min_intervals": 100,
+      "window_seconds": 1.0,
+      "missing_multiplier": 3.0,
+      "period_tolerance": 0.3,
+      "frequency_tolerance": 0.5,
+      "sigma_multiplier": 3.0,
+      "burst_factor": 0.25,
+      "burst_frames": 4,
+      "ignore_ids": [
+        2046
+      ]
+    },
+    "absolute_time_available": false,
+    "quality_note": "Intervals are provisional until diagnostic counters arrive; exclude overlaps during evaluation.",
+    "has_quality_issues": false
+  },
+  "analysis_error": null,
+  "analysis_queue_overflow": false,
+  "analysis_complete": true,
+  "performance": {
+    "analysis_processing_s": 8.92168349,
+    "analysis_records_per_processing_second": 2007.4686599311315,
+    "analysis_us_per_record": 498.13978168620883,
+    "analysis_bytes_processed": 696765,
+    "queue_chunks": 0,
+    "queue_peak_chunks": 3,
+    "queue_capacity_chunks": 128,
+    "peak_resident_memory_bytes": 32374784,
+    "processing_fraction_of_capture_time": 0.054397556822820416
+  },
+  "trace_sha256": "6caf14703c9aa0c448cb39a7c35f89583134b0697ecb4999d966469b79cbd4b6"
+}

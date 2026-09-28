@@ -1,0 +1,53 @@
+{
+  "session_id": "analysis",
+  "mode": "replay",
+  "created_utc": "2026-09-19T20:35:55.250722+00:00",
+  "arguments": {
+    "port": "/dev/ttyAMA0",
+    "baud": 2000000,
+    "seconds": 0,
+    "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+    "channel": 1,
+    "baseline": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554\\input.baseline.json",
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_id": null,
+    "queue_chunks": 128,
+    "output": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554",
+    "session": "analysis",
+    "replay": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\live_checks\\benchmarks\\20260919_223554\\input.canbin"
+  },
+  "settings": {
+    "channel": 1,
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma_multiplier": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_ids": [
+      2046
+    ]
+  },
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "baseline_sha256": "09de418eccb0346a17f4561db6dc823401c1a1d7747b3a970f4fbeb716dd3ca2",
+  "cantools_version": "44.1.0",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "code_sha256": {
+    "live_detect.py": "1cfb89826396f92394436ccda61d75b1cb3198ee2c5461d65e417456162a6e94",
+    "live_rules.py": "bf653bc4bc5f37436fec5897d23aebcbc06b84ede068d18be8d818953efb3d8b",
+    "can_stream_protocol.py": "5eee32a46699aac27030210cc2e1ed64bd57b34a8e49e9895d988df6560423c6"
+  }
+}

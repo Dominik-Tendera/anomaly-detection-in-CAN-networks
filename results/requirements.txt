@@ -1,0 +1,4 @@
+# Analysis and plots; versions available in the validation environment.
+-r ../generator/requirements.txt
+matplotlib==3.11.2
+numpy==2.5.3

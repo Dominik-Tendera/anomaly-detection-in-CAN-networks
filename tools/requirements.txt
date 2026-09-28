@@ -1,0 +1,22 @@
+# Host side dependencies of the analysis tools in tools/.
+#
+# Install, from the repository root:
+#   python3 -m pip install -r tools/requirements.txt
+#
+# Versions are pinned exactly so that a session recorded on the Raspberry Pi and
+# a session re-analysed later on a different machine run against the same code.
+# A floating range would let a library change its numerics between two runs that
+# the session report claims are comparable.
+#
+# Checked against the PyPI release index on 2026-09-19. numpy is pinned to the
+# version already present on the analysis host rather than to the newest release
+# 2.5.3, because that is the build the existing receiver was exercised with;
+# scikit-learn 1.9.1 declares numpy>=1.24.1, so the two pins agree.
+
+pyserial==3.5         # serial port access for the live stream and for SLCAN
+cantools==44.1.0      # DBC parsing, signal decoding, signal ranges
+numpy==2.2.4          # descriptive statistics over analysis windows
+scikit-learn==1.9.1   # Isolation Forest and One-Class SVM, tasks 15 and 16
+
+# The test runner uses unittest from the standard library, so running
+# tests/run_tests.sh needs nothing beyond the packages listed above.

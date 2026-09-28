@@ -1,0 +1,22 @@
+{
+  "format": "can-anomaly-scenario-v1",
+  "episodes": [
+    {"type": "frequency_increase", "start": 15, "duration": 8, "can_id": null,
+     "parameters": {"frequency_factor": 1.5, "variant": "mild"}},
+    {"type": "frequency_increase", "start": 27, "duration": 8, "can_id": null,
+     "parameters": {"frequency_factor": 4.0, "variant": "strong"}},
+    {"type": "frequency_decrease", "start": 39, "duration": 8, "can_id": null,
+     "parameters": {"frequency_factor": 0.5}},
+    {"type": "disappearance", "start": 51, "duration": 8, "can_id": null},
+    {"type": "burst", "start": 63, "duration": 2, "can_id": null,
+     "parameters": {"count": 8, "interval_s": 0.01}},
+    {"type": "burst", "start": 71, "duration": 2, "can_id": null,
+     "parameters": {"count": 30, "interval_s": 0.01}},
+    {"type": "unknown_dbc_id", "start": 79, "duration": 4, "can_id": null,
+     "parameters": {"count": 8, "interval_s": 0.05, "data_hex": "DEADBEEF"}},
+    {"type": "dlc_mismatch", "start": 87, "duration": 4, "can_id": null,
+     "parameters": {"count": 8, "interval_s": 0.05}},
+    {"type": "out_of_range_signal", "start": 95, "duration": 4, "can_id": null,
+     "parameters": {"count": 8, "interval_s": 0.2}}
+  ]
+}

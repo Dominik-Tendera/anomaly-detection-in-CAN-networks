@@ -1,0 +1,718 @@
+{
+  "session_id": "anomalies_seed159346_matrix_02",
+  "created_utc": "2026-09-20T19:42:27.625022+00:00",
+  "mode": "hardware",
+  "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "seed": 159346,
+  "scenario_source": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\tools\\scenarios\\intensity_matrix.example.json",
+  "arguments": {
+    "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+    "port": "COM4",
+    "dry_run": false,
+    "bitrate": 1000000,
+    "duration": 160.0,
+    "ids": null,
+    "seed": 159346,
+    "max_messages": 20,
+    "period_ms": null,
+    "default_period_ms": 100.0,
+    "phase_mode": "random",
+    "max_fps": 80.0,
+    "host_utilisation": 0.4,
+    "signals": "sine",
+    "wave_period": 10.0,
+    "scenario": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\tools\\scenarios\\intensity_matrix.example.json",
+    "marker_id": 2046,
+    "timeout": 1.0,
+    "output": "captures",
+    "session": "anomalies_seed159346_matrix_02"
+  },
+  "host_baud": 115200,
+  "budget": {
+    "nominal_fps": 79.4,
+    "host_bits_per_second": 16578.0,
+    "host_utilisation": 0.14390625,
+    "estimated_can_utilisation_upper": 0.0103534,
+    "skipped": [
+      {
+        "can_id": 769,
+        "name": "SMOTER_IMU_ACC_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 770,
+        "name": "SMOTER_IMU_GYRO_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1762,
+        "name": "NODE_CLAIMING_PROCEDURE_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1,
+        "name": "GLOBAL_FAILSAFE_COMMAND",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1030,
+        "name": "GPS_FRAME_6",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 15,
+        "name": "DASH_PAGE_CONTENTS_POWERTRAIN_4",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1322,
+        "name": "ANGLE_SENSOR_RR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 118,
+        "name": "FLYING_MASTER_END",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1825,
+        "name": "MAIN_SW_REQ_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 95,
+        "name": "AMS_PWR_LIMITS_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 455,
+        "name": "AREO_PRESSURE_SENSORS_05_08_A",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1877,
+        "name": "FS_DATALOGGER_RESERVED_6",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1032,
+        "name": "IMU_ANGULAR_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 458,
+        "name": "AREO_PRESSURE_SENSORS_CFG_A",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 37,
+        "name": "MagnetizingCurrentFrame",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 456,
+        "name": "AREO_PRESSURE_SENSORS_09_12_A",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 35,
+        "name": "WHEEL_TARGET_TORQUE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 387,
+        "name": "AREO_PRESSURE_SENSORS_13_16_B",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 11,
+        "name": "DASH_PAGE_CONTENTS_MAIN_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 101,
+        "name": "AMS_MAIN_COMMAND_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 386,
+        "name": "AREO_PRESSURE_SENSORS_09_12_B",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 96,
+        "name": "AMS_STATUS_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 7,
+        "name": "SW",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 25,
+        "name": "INV_FR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 100,
+        "name": "PEDALS_DEBUG",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2021,
+        "name": "LSS_RECEIVE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1553,
+        "name": "RES_SDO_RECEIVE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 145,
+        "name": "RES_EMERGENCY",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 512,
+        "name": "DV_CONTROL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1824,
+        "name": "SW_MAIN_REQ_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 12,
+        "name": "DASH_PAGE_CONTENTS_POWERTRAIN_1",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2024,
+        "name": "WHEEL_FR_FORCE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1321,
+        "name": "ANGLE_SENSOR_FL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1761,
+        "name": "NODE_CLAIMING_PROCEDURE_1",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1876,
+        "name": "FS_DATALOGGER_RESERVED_5",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 128,
+        "name": "SYNC",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 768,
+        "name": "Odometer",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 103,
+        "name": "INV_ErrorCode",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 454,
+        "name": "AREO_PRESSURE_SENSORS_01_04_A",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1033,
+        "name": "IMU_ACCELERATION_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1791,
+        "name": "NODE_CLAIMING_PROCEDURE_END",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 0,
+        "name": "NMT_NODE_CONTROL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1038,
+        "name": "POWER_MODULE_ERROR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1874,
+        "name": "FS_DATALOGGER_RESERVED_3",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1320,
+        "name": "ANGLE_SENSOR_FR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 98,
+        "name": "AMS_SLAVE_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1318,
+        "name": "BRAKE_LIGHT_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1036,
+        "name": "LV_BMS_TEMP_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1325,
+        "name": "AREO_SENS_FRONT_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1809,
+        "name": "NMT_NODE_MONITORING",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1026,
+        "name": "GPS_FRAME_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2025,
+        "name": "WHEEL_FR_FORCE_CALIBRATION",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1425,
+        "name": "RES_SDO_TRANSMIT",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2023,
+        "name": "WHEEL_FL_FORCE_CALIBRATION",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1035,
+        "name": "LV_BMS_VOLTAGE_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 33,
+        "name": "CF_WHEEL_SPEED_CALCULATED",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 513,
+        "name": "DV_TORQUE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1329,
+        "name": "ACCU_FAN_SPEED",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 36,
+        "name": "TorqueCurrentFrame",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1298,
+        "name": "AS_INFO_ID",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2022,
+        "name": "WHEEL_FL_FORCE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 32,
+        "name": "SW_ANGLE_SENSOR_CALIB",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1282,
+        "name": "DV_SYSTEM_STATUS",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1776,
+        "name": "NODE_CLAIMING_PROCEDURE_BEGIN",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 457,
+        "name": "AREO_PRESSURE_SENSORS_13_16_A",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 529,
+        "name": "PDO_RECEIVE",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 256,
+        "name": "TIMESTAMP",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1760,
+        "name": "DYNAMIC_SDO_REQUEST",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 26,
+        "name": "INV_RL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1028,
+        "name": "GPS_FRAME_4",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 97,
+        "name": "AMS_ERROR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1027,
+        "name": "GPS_FRAME_3",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 113,
+        "name": "FLYING_MASTER_BEGIN",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1031,
+        "name": "GPS_FRAME_7",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 13,
+        "name": "DASH_PAGE_CONTENTS_POWERTRAIN_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 388,
+        "name": "AREO_PRESSURE_SENSORS_CFG_B",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 78,
+        "name": "LV_BMS_TOTAL_VOLTAGE_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1072,
+        "name": "FS_DATALOGGER_STATUS",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 189,
+        "name": "LV_BMS_CURR_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 24,
+        "name": "INV_FL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1793,
+        "name": "SW_PEDALS_REQ_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 771,
+        "name": "SMOTER_IMU_QUATERNION_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 14,
+        "name": "DASH_PAGE_CONTENTS_POWERTRAIN_3",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 99,
+        "name": "PEDALS_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1568,
+        "name": "AUTONOMUS_MISSION_INDICATOR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1316,
+        "name": "AMS_IVT_GENERAL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1323,
+        "name": "ANGLE_SENSOR_RL",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1029,
+        "name": "GPS_FRAME_5",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 34,
+        "name": "POWERTRAIN_DEBUG",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 27,
+        "name": "INV_RR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1025,
+        "name": "GPS_FRAME_1",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2026,
+        "name": "LV_BMS_SOC_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 102,
+        "name": "MAIN_STATUS_FRAME",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 20,
+        "name": "SW_SENSOR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 384,
+        "name": "AREO_PRESSURE_SENSORS_01_04_B",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 401,
+        "name": "PDO_TRANSMIT",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1875,
+        "name": "FS_DATALOGGER_RESERVED_4",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 38,
+        "name": "POWERTRAIN_DEBUG_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 9,
+        "name": "DASH_PAGE_CONTENTS_FANS_AND_PUMP",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1324,
+        "name": "AREO_SENS_FRONT_1",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1281,
+        "name": "DV_DRIVING_DYNAMICS_2",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 257,
+        "name": "SAFETY_RELEVANT_DATA_BEGIN",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2020,
+        "name": "LSS_TRANSMIT",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 1024,
+        "name": "GPS_FRAME_0",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 17,
+        "name": "START_BUTTONS",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 2,
+        "name": "New_Message_218",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      },
+      {
+        "can_id": 65,
+        "name": "SENSORS_REAR",
+        "reason": "budzet przepustowosci (fps / USB-serial / CAN)"
+      }
+    ]
+  },
+  "messages": [
+    {
+      "can_id": 6,
+      "name": "ACCU_FAN_SPEED_REQUEST",
+      "dlc": 2,
+      "period_s": 10.0,
+      "period_source": "dbc:Period",
+      "phase_s": 9.745736280871832
+    },
+    {
+      "can_id": 1039,
+      "name": "POWER_MODULE_REQUEST",
+      "dlc": 8,
+      "period_s": 0.2,
+      "period_source": "dbc:Period",
+      "phase_s": 0.1604709500299762
+    },
+    {
+      "can_id": 127,
+      "name": "INDICATE_ACTIVE_INTERFACE",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.04487470563163355
+    },
+    {
+      "can_id": 1763,
+      "name": "NODE_CLAIMING_PROCEDURE_3",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.049820707057573715
+    },
+    {
+      "can_id": 1328,
+      "name": "ANGLE_SENSOR_COMMAND",
+      "dlc": 6,
+      "period_s": 10.0,
+      "period_source": "dbc:Period",
+      "phase_s": 7.0749986063906025
+    },
+    {
+      "can_id": 385,
+      "name": "AREO_PRESSURE_SENSORS_05_08_B",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.0947046747023447
+    },
+    {
+      "can_id": 1873,
+      "name": "FS_DATALOGGER_RESERVED_2",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.09816837188809528
+    },
+    {
+      "can_id": 10,
+      "name": "DASH_PAGE_CONTENTS_MAIN_1",
+      "dlc": 2,
+      "period_s": 1.0,
+      "period_source": "dbc:Period",
+      "phase_s": 0.3917689995513106
+    },
+    {
+      "can_id": 1872,
+      "name": "FS_DATALOGGER_RESERVED_1",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.031838279846831886
+    },
+    {
+      "can_id": 1407,
+      "name": "V_T_REQUEST_FRAME",
+      "dlc": 8,
+      "period_s": 10.0,
+      "period_source": "dbc:Period",
+      "phase_s": 8.66169865604044
+    },
+    {
+      "can_id": 1317,
+      "name": "BUZZER_FRAME",
+      "dlc": 1,
+      "period_s": 0.2,
+      "period_source": "dbc:Period",
+      "phase_s": 0.08387845220537282
+    },
+    {
+      "can_id": 1280,
+      "name": "DV_DRIVING_DYNAMICS_1",
+      "dlc": 8,
+      "period_s": 0.1,
+      "period_source": "default",
+      "phase_s": 0.06488846920351563
+    },
+    {
+      "can_id": 1327,
+      "name": "AREO_SENS_REAR_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "period_source": "dbc:Period",
+      "phase_s": 0.6356424798562569
+    },
+    {
+      "can_id": 1326,
+      "name": "AREO_SENS_REAR_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "period_source": "dbc:Period",
+      "phase_s": 0.8994828133102284
+    },
+    {
+      "can_id": 1037,
+      "name": "POWER_MODULE",
+      "dlc": 8,
+      "period_s": 0.2,
+      "period_source": "dbc:Period",
+      "phase_s": 0.04176835936434711
+    },
+    {
+      "can_id": 1881,
+      "name": "AMS_IMD_SDC_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "period_source": "dbc:Period",
+      "phase_s": 0.6785562943741307
+    },
+    {
+      "can_id": 1034,
+      "name": "LV_BMS_REQUEST_FRAME",
+      "dlc": 1,
+      "period_s": 10.0,
+      "period_source": "dbc:Period",
+      "phase_s": 4.1670856920842425
+    }
+  ],
+  "marker": {
+    "can_id": 2046,
+    "start_relative_us": 0,
+    "purpose": "alignment of generator truth with Raspberry Pi device timestamps"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "session_id": "torque_check",
+  "mode": "dry_run",
+  "status": "completed",
+  "statistics": {
+    "commands_attempted": 100,
+    "commands_acknowledged": 100,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.0,
+    "per_id": {
+      "512": {
+        "acknowledged": 50,
+        "skipped": 0
+      },
+      "513": {
+        "acknowledged": 50,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 5.0,
+    "acknowledged_fps": 20.0
+  },
+  "adapter": {},
+  "error": null,
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN."
+}

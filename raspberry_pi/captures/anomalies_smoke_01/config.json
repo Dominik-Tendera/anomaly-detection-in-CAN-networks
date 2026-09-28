@@ -1,0 +1,53 @@
+{
+  "session_id": "anomalies_smoke_01",
+  "mode": "live",
+  "created_utc": "2026-09-20T11:20:27.541090+00:00",
+  "arguments": {
+    "port": "/dev/ttyAMA0",
+    "baud": 2000000,
+    "seconds": 0,
+    "dbc": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/CAN_PARSER/RTE_3.5_CAN1_CAR.dbc",
+    "channel": 1,
+    "baseline": "captures_live/baseline_dbc_seed42/baseline.json",
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_id": null,
+    "queue_chunks": 128,
+    "output": "captures_live",
+    "session": "anomalies_smoke_01",
+    "replay": null
+  },
+  "settings": {
+    "channel": 1,
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma_multiplier": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_ids": [
+      2046
+    ]
+  },
+  "dbc_sha256": "46832317aa2b4c2150ae17e59232c0abe80d07c2cbbbc926a3183a25fa0cc03e",
+  "baseline_sha256": "794b7649a0d3350288111137dc099d3b5eb0d14ce28854547ad246bad517024b",
+  "cantools_version": "44.1.0",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-1020-raspi-aarch64-with-glibc2.39",
+  "machine": "aarch64",
+  "code_sha256": {
+    "live_detect.py": "a45a59c9714f2b9dbcf7dd9170a3c16ee4916f3a3f3412a371c9e3bfe5028af0",
+    "live_rules.py": "9c7e124b4eea77a5ca3fc0b5ce2b61869ef04c3112164c23be5ab255e0ee6c48",
+    "can_stream_protocol.py": "5eee32a46699aac27030210cc2e1ed64bd57b34a8e49e9895d988df6560423c6"
+  }
+}

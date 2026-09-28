@@ -1,0 +1,5 @@
+﻿episode,rule,evaluated_intervals,intervals_outside_limits,expected_new_onsets,recorded_new_alarms,matched_onsets
+E01,period,73,9,9,9,9
+E01,sigma,73,39,24,24,24
+E04,period,46,5,5,5,5
+E04,sigma,46,36,9,9,9

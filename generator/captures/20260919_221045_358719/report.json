@@ -1,0 +1,103 @@
+{
+  "session_id": "20260919_221045_358719",
+  "mode": "hardware",
+  "status": "interrupted",
+  "statistics": {
+    "commands_attempted": 521,
+    "commands_acknowledged": 521,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.012999999979510957,
+    "per_id": {
+      "0": {
+        "acknowledged": 27,
+        "skipped": 0
+      },
+      "1": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "2": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "6": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "7": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "9": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "10": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "11": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "12": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "13": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "14": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "15": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "17": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "20": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "24": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "25": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "26": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "27": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "32": {
+        "acknowledged": 26,
+        "skipped": 0
+      },
+      "33": {
+        "acknowledged": 26,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 2.60999999998603,
+    "acknowledged_fps": 199.61685823861632
+  },
+  "adapter": {
+    "firmware": "0502h",
+    "hardware": "0003",
+    "serial": "16165743"
+  },
+  "error": "Ctrl+C",
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN.",
+  "received_frames_while_waiting": 0
+}

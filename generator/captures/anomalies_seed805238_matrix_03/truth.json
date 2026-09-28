@@ -1,0 +1,294 @@
+{
+  "format": "can-anomaly-ground-truth-v1",
+  "session_id": "anomalies_seed805238_matrix_03",
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "seed": 805238,
+  "time_reference": "generator_monotonic_seconds_since_start_marker",
+  "marker_can_id": 2046,
+  "episodes": [
+    {
+      "episode_id": "E01",
+      "type": "frequency_increase",
+      "start": 15,
+      "end": 21,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 1.25,
+        "variant": "mild",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.08
+      },
+      "planned_frames": 75,
+      "acknowledged_frames": 75,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E02",
+      "type": "frequency_increase",
+      "start": 25,
+      "end": 31,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 2.0,
+        "variant": "medium",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.05
+      },
+      "planned_frames": 120,
+      "acknowledged_frames": 120,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E03",
+      "type": "frequency_increase",
+      "start": 35,
+      "end": 41,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 4.0,
+        "variant": "strong",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.025
+      },
+      "planned_frames": 240,
+      "acknowledged_frames": 240,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E04",
+      "type": "frequency_decrease",
+      "start": 45,
+      "end": 51,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 0.8,
+        "variant": "mild",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.125
+      },
+      "planned_frames": 48,
+      "acknowledged_frames": 48,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E05",
+      "type": "frequency_decrease",
+      "start": 55,
+      "end": 61,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 0.5,
+        "variant": "medium",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.2
+      },
+      "planned_frames": 30,
+      "acknowledged_frames": 30,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E06",
+      "type": "frequency_decrease",
+      "start": 65,
+      "end": 71,
+      "can_id": 65,
+      "parameters": {
+        "frequency_factor": 0.25,
+        "variant": "strong",
+        "reference_period_s": 0.1,
+        "anomalous_period_s": 0.4
+      },
+      "planned_frames": 15,
+      "acknowledged_frames": 15,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E07",
+      "type": "disappearance",
+      "start": 75,
+      "end": 76,
+      "can_id": 65,
+      "parameters": {
+        "variant": "short"
+      },
+      "planned_frames": 0,
+      "acknowledged_frames": 0,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E08",
+      "type": "disappearance",
+      "start": 80,
+      "end": 85,
+      "can_id": 65,
+      "parameters": {
+        "variant": "long"
+      },
+      "planned_frames": 0,
+      "acknowledged_frames": 0,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E09",
+      "type": "burst",
+      "start": 90,
+      "end": 92,
+      "can_id": 455,
+      "parameters": {
+        "count": 4,
+        "interval_s": 0.02,
+        "variant": "threshold"
+      },
+      "planned_frames": 4,
+      "acknowledged_frames": 4,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E10",
+      "type": "burst",
+      "start": 95,
+      "end": 97,
+      "can_id": 455,
+      "parameters": {
+        "count": 20,
+        "interval_s": 0.01,
+        "variant": "dense"
+      },
+      "planned_frames": 20,
+      "acknowledged_frames": 16,
+      "skipped_frames": 4
+    },
+    {
+      "episode_id": "E11",
+      "type": "unknown_dbc_id",
+      "start": 103,
+      "end": 104,
+      "can_id": 2045,
+      "parameters": {
+        "count": 1,
+        "interval_s": 0.05,
+        "data_hex": "DEADBEEF",
+        "variant": "single"
+      },
+      "planned_frames": 1,
+      "acknowledged_frames": 1,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E12",
+      "type": "unknown_dbc_id",
+      "start": 108,
+      "end": 110,
+      "can_id": 2045,
+      "parameters": {
+        "count": 8,
+        "interval_s": 0.05,
+        "data_hex": "DEADBEEF",
+        "variant": "repeated"
+      },
+      "planned_frames": 8,
+      "acknowledged_frames": 8,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E13",
+      "type": "dlc_mismatch",
+      "start": 116,
+      "end": 118,
+      "can_id": 6,
+      "parameters": {
+        "count": 5,
+        "interval_s": 0.05,
+        "variant": "shorter",
+        "dbc_dlc": 2,
+        "injected_dlc": 1
+      },
+      "planned_frames": 5,
+      "acknowledged_frames": 5,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E14",
+      "type": "dlc_mismatch",
+      "start": 124,
+      "end": 126,
+      "can_id": 6,
+      "parameters": {
+        "count": 5,
+        "interval_s": 0.05,
+        "variant": "longer",
+        "dbc_dlc": 2,
+        "injected_dlc": 3
+      },
+      "planned_frames": 5,
+      "acknowledged_frames": 5,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E15",
+      "type": "out_of_range_signal",
+      "start": 132,
+      "end": 134,
+      "can_id": 6,
+      "parameters": {
+        "count": 5,
+        "interval_s": 0.2,
+        "direction": "above",
+        "raw_steps": 1,
+        "variant": "just_above",
+        "signal": "AccuFunSpeedIncrease",
+        "raw_value": 101,
+        "physical_value": 101.0,
+        "minimum": -100,
+        "maximum": 100
+      },
+      "planned_frames": 5,
+      "acknowledged_frames": 5,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E16",
+      "type": "out_of_range_signal",
+      "start": 140,
+      "end": 142,
+      "can_id": 6,
+      "parameters": {
+        "count": 5,
+        "interval_s": 0.2,
+        "direction": "below",
+        "raw_steps": 1,
+        "variant": "just_below",
+        "signal": "AccuFunSpeedIncrease",
+        "raw_value": -101,
+        "physical_value": -101.0,
+        "minimum": -100,
+        "maximum": 100
+      },
+      "planned_frames": 5,
+      "acknowledged_frames": 5,
+      "skipped_frames": 0
+    },
+    {
+      "episode_id": "E17",
+      "type": "out_of_range_signal",
+      "start": 148,
+      "end": 150,
+      "can_id": 6,
+      "parameters": {
+        "count": 5,
+        "interval_s": 0.2,
+        "direction": "above",
+        "raw_steps": 10,
+        "variant": "far_above",
+        "signal": "AccuFunSpeedIncrease",
+        "raw_value": 110,
+        "physical_value": 110.0,
+        "minimum": -100,
+        "maximum": 100
+      },
+      "planned_frames": 5,
+      "acknowledged_frames": 5,
+      "skipped_frames": 0
+    }
+  ]
+}

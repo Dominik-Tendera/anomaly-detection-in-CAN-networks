@@ -1,0 +1,4 @@
+{"reason":"stream_decode_error","session_index":0,"start_us":15393004845,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":15393004845,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":15445582609,"end_us":null,"count":4}
+{"reason":"sequence_gap","session_index":0,"start_us":15445582609,"end_us":null,"missing":2}

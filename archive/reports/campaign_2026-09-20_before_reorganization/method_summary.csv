@@ -1,0 +1,7 @@
+﻿method,new_onset_episodes,background_events,clean_background_events,clean_background_minutes,clean_background_events_per_minute
+dbc,121,0,0,24.676168403971708,0.0
+timeout,60,0,0,24.676168403971708,0.0
+period,168,0,0,24.676168403971708,0.0
+frequency,132,13,13,24.676168403971708,0.5268240914544743
+three_sigma,168,118,115,24.676168403971708,4.660366962866504
+burst,55,0,0,24.676168403971708,0.0

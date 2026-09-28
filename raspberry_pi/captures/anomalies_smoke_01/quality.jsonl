@@ -1,0 +1,8 @@
+{"reason":"stream_decode_error","session_index":0,"start_us":5005629845,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":5005629845,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":5010668203,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":5010668203,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":5160445845,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":5160445845,"end_us":null,"missing":1}
+{"reason":"stream_decode_error","session_index":0,"start_us":5188346136,"end_us":null,"count":2}
+{"reason":"sequence_gap","session_index":0,"start_us":5188346136,"end_us":null,"missing":1}

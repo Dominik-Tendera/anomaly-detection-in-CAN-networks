@@ -1,0 +1,59 @@
+{
+  "format": "can-live-baseline-v1",
+  "ready": true,
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "channel": 1,
+  "messages": {
+    "100": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "11": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "512": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "13": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1282": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1280": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1327": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1325": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1326": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    },
+    "1324": {
+      "period_us": 1176.4705882352941,
+      "std_us": 1.0,
+      "interval_count": 1000
+    }
+  },
+  "note": "Synthetic benchmark profile, not a measured reference session"
+}

@@ -1,0 +1,72 @@
+{
+  "format": "can-live-baseline-v1",
+  "ready": true,
+  "dbc_sha256": "46832317aa2b4c2150ae17e59232c0abe80d07c2cbbbc926a3183a25fa0cc03e",
+  "channel": 1,
+  "learning_start_us": 6111469567,
+  "learning_end_us": 6171477565,
+  "min_intervals": 100,
+  "reference_is_normal": "assumption supplied by operator, not verified by detector",
+  "messages": {
+    "13": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 99984.26544240396,
+      "std_us": 7148.658069057786
+    },
+    "26": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 99988.28714524211,
+      "std_us": 7254.7429764103035
+    },
+    "1028": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 99998.32721201995,
+      "std_us": 4240.6481699475535
+    },
+    "1034": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 99998.32888146912,
+      "std_us": 7034.827051161251
+    },
+    "1036": {
+      "frame_count": 601,
+      "interval_count": 600,
+      "period_us": 99998.32666666672,
+      "std_us": 7138.754475627308
+    },
+    "1038": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 100015.02170283803,
+      "std_us": 4697.236108211959
+    },
+    "1280": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 99994.25041736217,
+      "std_us": 4550.489109530489
+    },
+    "1322": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 100002.39899833057,
+      "std_us": 6988.715356436249
+    },
+    "1553": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 100017.66277128547,
+      "std_us": 4702.671892092209
+    },
+    "1760": {
+      "frame_count": 600,
+      "interval_count": 599,
+      "period_us": 100005.68280467446,
+      "std_us": 7089.37748946985
+    }
+  }
+}

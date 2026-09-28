@@ -1,0 +1,58 @@
+{
+  "session_id": "20260919_220612_004440",
+  "mode": "dry_run",
+  "status": "completed",
+  "statistics": {
+    "commands_attempted": 200,
+    "commands_acknowledged": 200,
+    "slots_skipped_late": 0,
+    "max_lateness_s": 0.0,
+    "per_id": {
+      "0": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "1": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "2": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "6": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "7": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "9": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "10": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "11": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "12": {
+        "acknowledged": 20,
+        "skipped": 0
+      },
+      "13": {
+        "acknowledged": 20,
+        "skipped": 0
+      }
+    },
+    "elapsed_s": 2.0,
+    "acknowledged_fps": 100.0
+  },
+  "adapter": {},
+  "error": null,
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN."
+}

@@ -1,0 +1,113 @@
+{
+  "session_id": "20260919_221321",
+  "elapsed_s": 10.034,
+  "bytes_received": 64734,
+  "bytes_per_second_mean": 6451.8,
+  "records_per_second": {
+    "samples": [
+      231,
+      234,
+      234,
+      236,
+      235,
+      232,
+      234,
+      234,
+      235,
+      210
+    ],
+    "max": 236,
+    "mean": 231.5
+  },
+  "decoder": {
+    "records_ok": 2315,
+    "crc_errors": 0,
+    "cobs_errors": 0,
+    "short_records": 0,
+    "sync_losses": 0,
+    "unknown_types": 0,
+    "bytes_in": 64734
+  },
+  "frames": 2005,
+  "frames_per_channel": {
+    "1": 2005
+  },
+  "frames_without_time": 119,
+  "sequence": {
+    "records_missing_on_link": 0,
+    "gaps": [],
+    "gap_count": 0
+  },
+  "session_record": null,
+  "session_restarts": 0,
+  "device_counters": {
+    "can1": {
+      "rx_frames": 18043,
+      "valid_frames": 18043,
+      "buffered_frames": 18043,
+      "ring_dropped": 0,
+      "fifo_full": 0,
+      "fifo_overrun": 0,
+      "rx_read_errors": 0,
+      "extended_frames": 0,
+      "remote_frames": 0,
+      "invalid_dlc": 0,
+      "bus_off_entries": 0,
+      "passive_entries": 1,
+      "warning_entries": 2,
+      "max_rec": 255,
+      "max_tec": 0,
+      "state": "active"
+    },
+    "can2": {
+      "rx_frames": 0,
+      "valid_frames": 0,
+      "buffered_frames": 0,
+      "ring_dropped": 0,
+      "fifo_full": 0,
+      "fifo_overrun": 0,
+      "rx_read_errors": 0,
+      "extended_frames": 0,
+      "remote_frames": 0,
+      "invalid_dlc": 0,
+      "bus_off_entries": 0,
+      "passive_entries": 0,
+      "warning_entries": 0,
+      "max_rec": 0,
+      "max_tec": 0,
+      "state": "active"
+    }
+  },
+  "logger_stats": {
+    "ts64": 2228805132,
+    "ring_drop_total": 0,
+    "tx_records_sent": 229160,
+    "tx_bytes_sent": 10335228,
+    "tx_records_dropped": 0,
+    "tx_bytes_dropped": 0,
+    "event_queue_dropped": 697,
+    "loop_max_us": 995936,
+    "ring_peak": 4,
+    "ring_capacity": 5119,
+    "tx_buffer_peak": 898,
+    "tx_buffer_capacity": 16383,
+    "flags": 4,
+    "measurement_mode": false,
+    "usb_logging": false,
+    "stream_enabled": true
+  },
+  "events": [],
+  "event_count": 0,
+  "acks": [],
+  "lossless": true,
+  "files": {
+    "raw": "captures/20260919_221321.canbin",
+    "text_log": "captures/20260919_221321.log"
+  },
+  "notes": [
+    "A gap in the sequence number means records lost on the serial link. Frames dropped inside the logger never consume a sequence number, they appear in ring_dropped and in ring drop events, so the two causes are distinguishable.",
+    "Utilisation of the link should be read against the configured baud rate divided by ten bits per byte."
+  ],
+  "baudrate": 2000000,
+  "link_utilisation_percent": 3.23
+}

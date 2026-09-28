@@ -1,0 +1,79 @@
+% Materiał do adaptacji do rozdziału 8. Źródło: pomiary własne,
+% results/reports/campaign_2026-09-20; identyfikacja źródeł: source_manifest.csv.
+% Tabele nie wymagają dodatkowych pakietów. Rysunki: pakiet graphicx,
+% skopiować PDF do katalogu grafik pracy i dostosować ścieżki includegraphics.
+\section{Weryfikacja i wyniki pomiarów stanowiskowych}
+
+Badania objęły 19 realizacji macierzy scenariuszy dla sześciu ziaren generatora,
+łącznie 323 zaplanowane epizody. Osobno oceniono test funkcjonalny smoke\_03
+oraz sześć kompletnych sesji uczenia profilu. Wyniki w tej części pochodzą
+z pomiarów własnych. Zestawienie danych źródłowych i sum kontrolnych zapisano
+w pliku \texttt{source\_manifest.csv}, a wyniki pojedynczych epizodów
+w pliku \texttt{episodes.csv} towarzyszącym analizie.
+
+Znaczniki początku i końca przesyłane na magistrali umożliwiły powiązanie
+planu generatora z czasem urządzenia. W 18 z 19 macierzy uzyskano zgodność
+kolejności, identyfikatorów, długości i danych każdej potwierdzonej ramki.
+W pozostałej próbie nie odnaleziono dwóch ramek ruchu referencyjnego.
+W śladach odbiornika potwierdzono wszystkie 11\,110 ramek przypisanych
+do wstrzykniętych anomalii i potwierdzonych przez adapter.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Liczba realizacji z nowym alarmem w epizodzie. Źródło: pomiary własne.
+Brak ponownego alarmu DBC może oznaczać utrzymanie stanu naruszenia.}
+\label{tab:wyniki-macierz-alarmy}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.07\linewidth}p{0.47\linewidth}p{0.20\linewidth}p{0.16\linewidth}}
+\hline
+Epizod & Wariant & Reguła podstawowa & Dowolna reguła \\
+\hline
+E01 & Wzrost 1,25$\times$ & 0/19 & 19/19 \\
+E02 & Wzrost 2$\times$ & 19/19 & 19/19 \\
+E03 & Wzrost 4$\times$ & 19/19 & 19/19 \\
+E04 & Spadek do 0,8$\times$ & 0/19 & 19/19 \\
+E05 & Spadek do 0,5$\times$ & 13/19 & 19/19 \\
+E06 & Spadek do 0,25$\times$ & 19/19 & 19/19 \\
+E07 & Zanik 1 s & 19/19 & 19/19 \\
+E08 & Zanik 5 s & 19/19 & 19/19 \\
+E09 & Burst 4 ramki / 20 ms & 8/19 & 19/19 \\
+E10 & Burst 20 ramek / 10 ms & 19/19 & 19/19 \\
+E11 & Nieznane ID, 1 ramka & 19/19 & 19/19 \\
+E12 & Nieznane ID, 8 ramek & 19/19 & 19/19 \\
+E13 & DLC krótsze & 19/19 & 19/19 \\
+E14 & DLC dłuższe & 16/19 & 16/19 \\
+E15 & Wartość 101 (maks. 100) & 19/19 & 19/19 \\
+E16 & Wartość -101 (min. -100) & 16/19 & 16/19 \\
+E17 & Wartość 110 (maks. 100) & 13/19 & 13/19 \\
+\hline
+\end{tabular}
+\end{table}
+
+Nowy alarm co najmniej jednej metody wystąpił w 311 z 323 epizodów.
+Wskaźnik ten opisuje rejestrację nowych zdarzeń, a nie czułość klasyfikacji
+pojedynczych ramek. Reguły zapisują wejście w stan naruszenia i nie powtarzają
+alarmu przed jego skasowaniem poprawną obserwacją. Dwanaście epizodów bez
+nowego alarmu DBC było związanych z utrzymaniem takiego stanu pomiędzy
+wstrzyknięciami. Dla wiadomości o okresie 10~s odstęp 8~s między początkami
+epizodów nie gwarantował wystąpienia poprawnej ramki przywracającej stan normalny.
+
+Detektor zaniku zareagował we wszystkich 38 próbach ciszy o długości 1~s
+lub 5~s. Reguły odstępu mogły wykryć wydłużenie przerwy dopiero po powrocie
+wiadomości. Reguła częstotliwości wykryła silniejsze zmiany w 57 z 57 prób
+wzrostu dwukrotnego, czterokrotnego lub spadku do jednej czwartej wartości
+odniesienia. Dla spadku do połowy częstotliwości wynik wynosił 13 z 19.
+Ostra nierówność względem progu bliskiego pięciu ramkom powodowała,
+że niewielka różnica wyuczonego okresu zmieniała decyzję na granicy zakresu.
+
+W granicznym burście czterech ramek co 20~ms reguła burst zareagowała
+w 8 z 19 prób, mimo potwierdzenia odbioru wszystkich wstrzykniętych ramek.
+Rzeczywiste odstępy dochodziły do około 30~ms, przekraczając próg około 25~ms.
+W gęstym burście co 10~ms uzyskano reakcję w 19 z 19 prób, lecz odebrano
+356 z 380 zaplanowanych ramek, ponieważ harmonogram generatora pominął
+24 terminy. W ocenie intensywności wykorzystano zatem rzeczywisty zapis odbioru.
+
+% Proponowane rysunki: 01_macierz_metod.pdf, 02_realizacja_burstu.pdf,
+% 03_alarmy_tla.pdf, 04_granica_czestotliwosci.pdf, 05_jitter_z_pomiaru.pdf.
+% Dokładne wskaźniki alarmów tła i parametry wydajności: RAPORT_ANALIZY.md.
+% Nie utożsamiać nowych alarmów/epizod z recall ramek ani alarmów/min z FPR.

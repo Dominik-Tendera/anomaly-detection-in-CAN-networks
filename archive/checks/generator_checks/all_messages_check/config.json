@@ -1,0 +1,1033 @@
+{
+  "session_id": "all_messages_check",
+  "created_utc": "2026-09-19T19:58:45.873522+00:00",
+  "mode": "dry_run",
+  "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "cantools_version": "44.1.0",
+  "generator_sha256": "5ca467d6d66a38620fc890fe27b9987155111d0d0e569aa7f2e988e3a91fc5a9",
+  "engine_sha256": "c521e1aa083b666e75de8967739bcc72973d36652f50d2fbed703444792a2558",
+  "arguments": {
+    "dbc": "K:\\Praca Magisterska\\oprogramowanie\\RTE_3_0_CAN_LOGGER_2023\\CAN_PARSER\\RTE_3.5_CAN1_CAR.dbc",
+    "port": null,
+    "list_ports": false,
+    "list_messages": false,
+    "dry_run": true,
+    "bitrate": 1000000,
+    "duration": 2.0,
+    "ids": null,
+    "max_messages": 124,
+    "period_ms": 1000.0,
+    "max_fps": 200.0,
+    "host_utilisation": 0.4,
+    "signals": "sine",
+    "wave_period": 10.0,
+    "timeout": 1.0,
+    "output": "generator_checks",
+    "session": "all_messages_check"
+  },
+  "host_baud": 115200,
+  "budget": {
+    "nominal_fps": 124.0,
+    "host_bits_per_second": 24520.0,
+    "host_utilisation": 0.21284722222222222,
+    "estimated_can_utilisation_upper": 0.015484,
+    "skipped": []
+  },
+  "messages": [
+    {
+      "can_id": 0,
+      "name": "NMT_NODE_CONTROL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.0,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1,
+      "name": "GLOBAL_FAILSAFE_COMMAND",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.008064516129032258,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 2,
+      "name": "New_Message_218",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.016129032258064516,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 6,
+      "name": "ACCU_FAN_SPEED_REQUEST",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.024193548387096774,
+      "initial_data": "3f12"
+    },
+    {
+      "can_id": 7,
+      "name": "SW",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.03225806451612903,
+      "initial_data": "b31ab20000000000"
+    },
+    {
+      "can_id": 9,
+      "name": "DASH_PAGE_CONTENTS_FANS_AND_PUMP",
+      "dlc": 3,
+      "period_s": 1.0,
+      "phase_s": 0.04032258064516129,
+      "initial_data": "6a34e1"
+    },
+    {
+      "can_id": 10,
+      "name": "DASH_PAGE_CONTENTS_MAIN_1",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.04838709677419355,
+      "initial_data": "47b8"
+    },
+    {
+      "can_id": 11,
+      "name": "DASH_PAGE_CONTENTS_MAIN_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.056451612903225805,
+      "initial_data": "008a01e0e2009259"
+    },
+    {
+      "can_id": 12,
+      "name": "DASH_PAGE_CONTENTS_POWERTRAIN_1",
+      "dlc": 7,
+      "period_s": 1.0,
+      "phase_s": 0.06451612903225806,
+      "initial_data": "00000000000000"
+    },
+    {
+      "can_id": 13,
+      "name": "DASH_PAGE_CONTENTS_POWERTRAIN_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.07258064516129033,
+      "initial_data": "0000005100000000"
+    },
+    {
+      "can_id": 14,
+      "name": "DASH_PAGE_CONTENTS_POWERTRAIN_3",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.08064516129032258,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 15,
+      "name": "DASH_PAGE_CONTENTS_POWERTRAIN_4",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.08870967741935484,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 17,
+      "name": "START_BUTTONS",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.0967741935483871,
+      "initial_data": "8679"
+    },
+    {
+      "can_id": 20,
+      "name": "SW_SENSOR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.10483870967741936,
+      "initial_data": "5e786b43a7210000"
+    },
+    {
+      "can_id": 24,
+      "name": "INV_FL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.11290322580645161,
+      "initial_data": "992f56256650a9da"
+    },
+    {
+      "can_id": 25,
+      "name": "INV_FR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.12096774193548387,
+      "initial_data": "1e0b341ae174f108"
+    },
+    {
+      "can_id": 26,
+      "name": "INV_RL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.12903225806451613,
+      "initial_data": "18e5331de79acce2"
+    },
+    {
+      "can_id": 27,
+      "name": "INV_RR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.13709677419354838,
+      "initial_data": "cdc2e62d32bd19d2"
+    },
+    {
+      "can_id": 32,
+      "name": "SW_ANGLE_SENSOR_CALIB",
+      "dlc": 0,
+      "period_s": 1.0,
+      "phase_s": 0.14516129032258066,
+      "initial_data": ""
+    },
+    {
+      "can_id": 33,
+      "name": "CF_WHEEL_SPEED_CALCULATED",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.1532258064516129,
+      "initial_data": "5be49862a41b679d"
+    },
+    {
+      "can_id": 34,
+      "name": "POWERTRAIN_DEBUG",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.16129032258064516,
+      "initial_data": "5c0adf65a3f5209a"
+    },
+    {
+      "can_id": 35,
+      "name": "WHEEL_TARGET_TORQUE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.1693548387096774,
+      "initial_data": "ec2e035b13d1fca4"
+    },
+    {
+      "can_id": 36,
+      "name": "TorqueCurrentFrame",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.1774193548387097,
+      "initial_data": "f94c874306b378bc"
+    },
+    {
+      "can_id": 37,
+      "name": "MagnetizingCurrentFrame",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.18548387096774194,
+      "initial_data": "5960ac22a69f53dd"
+    },
+    {
+      "can_id": 38,
+      "name": "POWERTRAIN_DEBUG_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.1935483870967742,
+      "initial_data": "9b375be616be2fa2"
+    },
+    {
+      "can_id": 65,
+      "name": "SENSORS_REAR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.20161290322580644,
+      "initial_data": "2ad6d52900000000"
+    },
+    {
+      "can_id": 78,
+      "name": "LV_BMS_TOTAL_VOLTAGE_FRAME",
+      "dlc": 1,
+      "period_s": 1.0,
+      "phase_s": 0.20967741935483872,
+      "initial_data": "3f"
+    },
+    {
+      "can_id": 95,
+      "name": "AMS_PWR_LIMITS_FRAME",
+      "dlc": 4,
+      "period_s": 1.0,
+      "phase_s": 0.21774193548387097,
+      "initial_data": "b93e46c1"
+    },
+    {
+      "can_id": 96,
+      "name": "AMS_STATUS_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.22580645161290322,
+      "initial_data": "000021633bc00000"
+    },
+    {
+      "can_id": 97,
+      "name": "AMS_ERROR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.23387096774193547,
+      "initial_data": "781a000087e50000"
+    },
+    {
+      "can_id": 98,
+      "name": "AMS_SLAVE_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.24193548387096775,
+      "initial_data": "a51cc7985ae33867"
+    },
+    {
+      "can_id": 99,
+      "name": "PEDALS_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.25,
+      "initial_data": "00ae9ebde664a02e"
+    },
+    {
+      "can_id": 100,
+      "name": "PEDALS_DEBUG",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.25806451612903225,
+      "initial_data": "482268db0c5e0000"
+    },
+    {
+      "can_id": 101,
+      "name": "AMS_MAIN_COMMAND_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.2661290322580645,
+      "initial_data": "6b00000000000000"
+    },
+    {
+      "can_id": 102,
+      "name": "MAIN_STATUS_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.27419354838709675,
+      "initial_data": "00d9c01a123c0000"
+    },
+    {
+      "can_id": 103,
+      "name": "INV_ErrorCode",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.28225806451612906,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 113,
+      "name": "FLYING_MASTER_BEGIN",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.2903225806451613,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 118,
+      "name": "FLYING_MASTER_END",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.29838709677419356,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 127,
+      "name": "INDICATE_ACTIVE_INTERFACE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3064516129032258,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 128,
+      "name": "SYNC",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.31451612903225806,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 145,
+      "name": "RES_EMERGENCY",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3225806451612903,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 189,
+      "name": "LV_BMS_CURR_FRAME",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.33064516129032256,
+      "initial_data": "0000"
+    },
+    {
+      "can_id": 256,
+      "name": "TIMESTAMP",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3387096774193548,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 257,
+      "name": "SAFETY_RELEVANT_DATA_BEGIN",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3467741935483871,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 384,
+      "name": "AREO_PRESSURE_SENSORS_01_04_B",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3548387096774194,
+      "initial_data": "382d3703c7d2c8fc"
+    },
+    {
+      "can_id": 385,
+      "name": "AREO_PRESSURE_SENSORS_05_08_B",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3629032258064516,
+      "initial_data": "2273565cdd8ca9a3"
+    },
+    {
+      "can_id": 386,
+      "name": "AREO_PRESSURE_SENSORS_09_12_B",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3709677419354839,
+      "initial_data": "19b37b7be64c8484"
+    },
+    {
+      "can_id": 387,
+      "name": "AREO_PRESSURE_SENSORS_13_16_B",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3790322580645161,
+      "initial_data": "1f25a13ce0da5ec3"
+    },
+    {
+      "can_id": 388,
+      "name": "AREO_PRESSURE_SENSORS_CFG_B",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3870967741935484,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 401,
+      "name": "PDO_TRANSMIT",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.3951612903225806,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 454,
+      "name": "AREO_PRESSURE_SENSORS_01_04_A",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.4032258064516129,
+      "initial_data": "19a17d8ee65e8271"
+    },
+    {
+      "can_id": 455,
+      "name": "AREO_PRESSURE_SENSORS_05_08_A",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.4112903225806452,
+      "initial_data": "1fd6a330e0295ccf"
+    },
+    {
+      "can_id": 456,
+      "name": "AREO_PRESSURE_SENSORS_09_12_A",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.41935483870967744,
+      "initial_data": "3363c3f0cc9c3c0f"
+    },
+    {
+      "can_id": 457,
+      "name": "AREO_PRESSURE_SENSORS_13_16_A",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.4274193548387097,
+      "initial_data": "5191db43ae6e24bc"
+    },
+    {
+      "can_id": 458,
+      "name": "AREO_PRESSURE_SENSORS_CFG_A",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.43548387096774194,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 512,
+      "name": "DV_CONTROL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.4435483870967742,
+      "initial_data": "d6000168291c4a97"
+    },
+    {
+      "can_id": 513,
+      "name": "DV_TORQUE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.45161290322580644,
+      "initial_data": "c6642712399bd8ed"
+    },
+    {
+      "can_id": 529,
+      "name": "PDO_RECEIVE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.4596774193548387,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 768,
+      "name": "Odometer",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.46774193548387094,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 769,
+      "name": "SMOTER_IMU_ACC_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.47580645161290325,
+      "initial_data": "6438bbb3e013"
+    },
+    {
+      "can_id": 770,
+      "name": "SMOTER_IMU_GYRO_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.4838709677419355,
+      "initial_data": "5595a48405e5"
+    },
+    {
+      "can_id": 771,
+      "name": "SMOTER_IMU_QUATERNION_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.49193548387096775,
+      "initial_data": "3b12ac5bc4ed53a4"
+    },
+    {
+      "can_id": 1024,
+      "name": "GPS_FRAME_0",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5,
+      "initial_data": "63e475ff9c1b8a00"
+    },
+    {
+      "can_id": 1025,
+      "name": "GPS_FRAME_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5080645161290323,
+      "initial_data": "54b8133c461b36b8"
+    },
+    {
+      "can_id": 1026,
+      "name": "GPS_FRAME_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5161290322580645,
+      "initial_data": "b9cb2b78c6345487"
+    },
+    {
+      "can_id": 1027,
+      "name": "GPS_FRAME_3",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5241935483870968,
+      "initial_data": "16d99c2ee92663d1"
+    },
+    {
+      "can_id": 1028,
+      "name": "GPS_FRAME_4",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.532258064516129,
+      "initial_data": "70272161b9e5c5a5"
+    },
+    {
+      "can_id": 1029,
+      "name": "GPS_FRAME_5",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5403225806451613,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1030,
+      "name": "GPS_FRAME_6",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5483870967741935,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1031,
+      "name": "GPS_FRAME_7",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5564516129032258,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1032,
+      "name": "IMU_ANGULAR_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.5645161290322581,
+      "initial_data": "99e839e92c2e"
+    },
+    {
+      "can_id": 1033,
+      "name": "IMU_ACCELERATION_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.5725806451612904,
+      "initial_data": "a3e454cc074f"
+    },
+    {
+      "can_id": 1034,
+      "name": "LV_BMS_REQUEST_FRAME",
+      "dlc": 1,
+      "period_s": 1.0,
+      "phase_s": 0.5806451612903226,
+      "initial_data": "3a"
+    },
+    {
+      "can_id": 1035,
+      "name": "LV_BMS_VOLTAGE_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5887096774193549,
+      "initial_data": "b600274ffac70600"
+    },
+    {
+      "can_id": 1036,
+      "name": "LV_BMS_TEMP_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.5967741935483871,
+      "initial_data": "80c8e5c77f371a38"
+    },
+    {
+      "can_id": 1037,
+      "name": "POWER_MODULE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6048387096774194,
+      "initial_data": "a5dddea85a222157"
+    },
+    {
+      "can_id": 1038,
+      "name": "POWER_MODULE_ERROR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6129032258064516,
+      "initial_data": "0101000000000000"
+    },
+    {
+      "can_id": 1039,
+      "name": "POWER_MODULE_REQUEST",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6209677419354839,
+      "initial_data": "dcc54f1b00000000"
+    },
+    {
+      "can_id": 1072,
+      "name": "FS_DATALOGGER_STATUS",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.6290322580645161,
+      "initial_data": "c60031287172"
+    },
+    {
+      "can_id": 1280,
+      "name": "DV_DRIVING_DYNAMICS_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6370967741935484,
+      "initial_data": "cf8ac09a30753f65"
+    },
+    {
+      "can_id": 1281,
+      "name": "DV_DRIVING_DYNAMICS_2",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.6451612903225806,
+      "initial_data": "b01832ce1d19"
+    },
+    {
+      "can_id": 1282,
+      "name": "DV_SYSTEM_STATUS",
+      "dlc": 5,
+      "period_s": 1.0,
+      "phase_s": 0.6532258064516129,
+      "initial_data": "295a729006"
+    },
+    {
+      "can_id": 1298,
+      "name": "AS_INFO_ID",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6612903225806451,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1316,
+      "name": "AMS_IVT_GENERAL",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.6693548387096774,
+      "initial_data": "a90d48210ed1"
+    },
+    {
+      "can_id": 1317,
+      "name": "BUZZER_FRAME",
+      "dlc": 1,
+      "period_s": 1.0,
+      "phase_s": 0.6774193548387096,
+      "initial_data": "00"
+    },
+    {
+      "can_id": 1318,
+      "name": "BRAKE_LIGHT_FRAME",
+      "dlc": 1,
+      "period_s": 1.0,
+      "phase_s": 0.6854838709677419,
+      "initial_data": "00"
+    },
+    {
+      "can_id": 1320,
+      "name": "ANGLE_SENSOR_FR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.6935483870967742,
+      "initial_data": "9bdf24e39fc40000"
+    },
+    {
+      "can_id": 1321,
+      "name": "ANGLE_SENSOR_FL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7016129032258065,
+      "initial_data": "9af7ca42c0a30000"
+    },
+    {
+      "can_id": 1322,
+      "name": "ANGLE_SENSOR_RR",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7096774193548387,
+      "initial_data": "a814d87ad97e0000"
+    },
+    {
+      "can_id": 1323,
+      "name": "ANGLE_SENSOR_RL",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.717741935483871,
+      "initial_data": "c1648d3ae5590000"
+    },
+    {
+      "can_id": 1324,
+      "name": "AREO_SENS_FRONT_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7258064516129032,
+      "initial_data": "63b1e1d99c4e1e26"
+    },
+    {
+      "can_id": 1325,
+      "name": "AREO_SENS_FRONT_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7338709677419355,
+      "initial_data": "89cee5c176311a3e"
+    },
+    {
+      "can_id": 1326,
+      "name": "AREO_SENS_REAR_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7419354838709677,
+      "initial_data": "ade0dba0521f245f"
+    },
+    {
+      "can_id": 1327,
+      "name": "AREO_SENS_REAR_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.75,
+      "initial_data": "cce5c47a331a3b85"
+    },
+    {
+      "can_id": 1328,
+      "name": "ANGLE_SENSOR_COMMAND",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.7580645161290323,
+      "initial_data": "dfce6e203191"
+    },
+    {
+      "can_id": 1329,
+      "name": "ACCU_FAN_SPEED",
+      "dlc": 1,
+      "period_s": 1.0,
+      "phase_s": 0.7661290322580645,
+      "initial_data": "5a"
+    },
+    {
+      "can_id": 1407,
+      "name": "V_T_REQUEST_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7741935483870968,
+      "initial_data": "2a00000000000000"
+    },
+    {
+      "can_id": 1425,
+      "name": "RES_SDO_TRANSMIT",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.782258064516129,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1553,
+      "name": "RES_SDO_RECEIVE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.7903225806451613,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1568,
+      "name": "AUTONOMUS_MISSION_INDICATOR",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.7983870967741935,
+      "initial_data": "010100000001"
+    },
+    {
+      "can_id": 1760,
+      "name": "DYNAMIC_SDO_REQUEST",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8064516129032258,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1761,
+      "name": "NODE_CLAIMING_PROCEDURE_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8145161290322581,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1762,
+      "name": "NODE_CLAIMING_PROCEDURE_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8225806451612904,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1763,
+      "name": "NODE_CLAIMING_PROCEDURE_3",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8306451612903226,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1776,
+      "name": "NODE_CLAIMING_PROCEDURE_BEGIN",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8387096774193549,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1791,
+      "name": "NODE_CLAIMING_PROCEDURE_END",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8467741935483871,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1793,
+      "name": "SW_PEDALS_REQ_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8548387096774194,
+      "initial_data": "5ca3000000000000"
+    },
+    {
+      "can_id": 1809,
+      "name": "NMT_NODE_MONITORING",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8629032258064516,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1824,
+      "name": "SW_MAIN_REQ_FRAME",
+      "dlc": 3,
+      "period_s": 1.0,
+      "phase_s": 0.8709677419354839,
+      "initial_data": "000000"
+    },
+    {
+      "can_id": 1825,
+      "name": "MAIN_SW_REQ_FRAME",
+      "dlc": 3,
+      "period_s": 1.0,
+      "phase_s": 0.8790322580645161,
+      "initial_data": "000000"
+    },
+    {
+      "can_id": 1872,
+      "name": "FS_DATALOGGER_RESERVED_1",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8870967741935484,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1873,
+      "name": "FS_DATALOGGER_RESERVED_2",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.8951612903225806,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1874,
+      "name": "FS_DATALOGGER_RESERVED_3",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9032258064516129,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1875,
+      "name": "FS_DATALOGGER_RESERVED_4",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9112903225806451,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1876,
+      "name": "FS_DATALOGGER_RESERVED_5",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9193548387096774,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1877,
+      "name": "FS_DATALOGGER_RESERVED_6",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9274193548387096,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 1881,
+      "name": "AMS_IMD_SDC_FRAME",
+      "dlc": 6,
+      "period_s": 1.0,
+      "phase_s": 0.9354838709677419,
+      "initial_data": "00e1ad57b800"
+    },
+    {
+      "can_id": 2020,
+      "name": "LSS_TRANSMIT",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9435483870967742,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 2021,
+      "name": "LSS_RECEIVE",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9516129032258065,
+      "initial_data": "0000000000000000"
+    },
+    {
+      "can_id": 2022,
+      "name": "WHEEL_FL_FORCE",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.9596774193548387,
+      "initial_data": "7a09"
+    },
+    {
+      "can_id": 2023,
+      "name": "WHEEL_FL_FORCE_CALIBRATION",
+      "dlc": 0,
+      "period_s": 1.0,
+      "phase_s": 0.967741935483871,
+      "initial_data": ""
+    },
+    {
+      "can_id": 2024,
+      "name": "WHEEL_FR_FORCE",
+      "dlc": 2,
+      "period_s": 1.0,
+      "phase_s": 0.9758064516129032,
+      "initial_data": "520d"
+    },
+    {
+      "can_id": 2025,
+      "name": "WHEEL_FR_FORCE_CALIBRATION",
+      "dlc": 0,
+      "period_s": 1.0,
+      "phase_s": 0.9838709677419355,
+      "initial_data": ""
+    },
+    {
+      "can_id": 2026,
+      "name": "LV_BMS_SOC_FRAME",
+      "dlc": 8,
+      "period_s": 1.0,
+      "phase_s": 0.9919354838709677,
+      "initial_data": "e400000000000000"
+    }
+  ],
+  "timestamp_note": "Czasy hosta. Potwierdzenie SLCAN nie jest pomiarem czasu ramki na CAN.",
+  "traffic_note": "Syntetyczny ruch referencyjny; brak modelu zachowania ECU, licznikow i checksum aplikacyjnych."
+}

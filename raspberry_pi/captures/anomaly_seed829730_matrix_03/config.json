@@ -1,0 +1,53 @@
+{
+  "session_id": "anomaly_seed829730_matrix_03",
+  "mode": "live",
+  "created_utc": "2026-09-20T18:16:09.678091+00:00",
+  "arguments": {
+    "port": "/dev/ttyAMA0",
+    "baud": 2000000,
+    "seconds": 0,
+    "dbc": "/home/pi/RTE_3_0_CAN_LOGGER_2023/deployment/can-live-rpi/CAN_PARSER/RTE_3.5_CAN1_CAR.dbc",
+    "channel": 1,
+    "baseline": "captures_live/baseline_matrix_seed829730/baseline.json",
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_id": null,
+    "queue_chunks": 128,
+    "output": "captures_live",
+    "session": "anomaly_seed829730_matrix_03",
+    "replay": null
+  },
+  "settings": {
+    "channel": 1,
+    "learn_seconds": 60.0,
+    "min_intervals": 100,
+    "window_seconds": 1.0,
+    "missing_multiplier": 3.0,
+    "period_tolerance": 0.3,
+    "frequency_tolerance": 0.5,
+    "sigma_multiplier": 3.0,
+    "burst_factor": 0.25,
+    "burst_frames": 4,
+    "ignore_ids": [
+      2046
+    ]
+  },
+  "dbc_sha256": "8247ff6cef6e49ecc2c3680a4de5ef626a0efdc049910536efd62ccf8294c46a",
+  "baseline_sha256": "73dd23e31a96e03f540dad1584b0274a7085b46dc6c4f187a2b3f07ceba679d7",
+  "cantools_version": "44.1.0",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-1064-raspi-aarch64-with-glibc2.39",
+  "machine": "aarch64",
+  "code_sha256": {
+    "live_detect.py": "d55af32528159f51ec6d3c2a8668b44ba34f8344bf4fef68786fb3611e87a503",
+    "live_rules.py": "083b4f80f5fc9e3b59060a8e1810226ddf926d6366bf489d80a8306bef9b367a",
+    "can_stream_protocol.py": "5eee32a46699aac27030210cc2e1ed64bd57b34a8e49e9895d988df6560423c6"
+  }
+}
